@@ -157,7 +157,8 @@ nav {
 
 .logo {
   display: block;
-  width: 50%;
+  min-width: 50px;
+  width: 10%;
   height: 20rem;
   background-image: url("../images/Logo.svg");
   background-repeat: no-repeat;

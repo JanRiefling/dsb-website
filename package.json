@@ -1,0 +1,23 @@
+{
+  "name": "dsb",
+  "version": "1.0.0",
+  "description": "Website for special Consulting Method",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanRiefling/dsb.git"
+  },
+  "author": "Jan Riefling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JanRiefling/dsb/issues"
+  },
+  "homepage": "https://github.com/JanRiefling/dsb#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
