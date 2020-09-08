@@ -1,8 +1,22 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'open_sansregular';
-}
-
-body {
     font-family: 'nunitoregular';
 }
+
+body {  
+    font-family: 'open_sansregular';
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: 'nunitolight';
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-family: 'nunitobold';
+    font-size: 1.3em;
+    letter-spacing: -1px;
+    color: $darkish;
+}
+
 

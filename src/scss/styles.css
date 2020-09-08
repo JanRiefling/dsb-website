@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0; }
 
-/* Nunito Font for Body, Caption */
 @font-face {
   font-family: 'nunitoregular';
   src: url("../fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-regular-webfont.woff") format("woff");
@@ -81,7 +80,6 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-/* OpenSans for Headlines */
 @font-face {
   font-family: 'open_sansbold';
   src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
@@ -143,10 +141,21 @@ body {
   font-style: normal; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'open_sansregular'; }
+  font-family: 'nunitoregular'; }
 
 body {
-  font-family: 'nunitoregular'; }
+  font-family: 'open_sansregular';
+  font-size: 1.2em; }
+
+h1 {
+  font-family: 'nunitolight';
+  letter-spacing: -1px; }
+
+h3 {
+  font-family: 'nunitobold';
+  font-size: 1.3em;
+  letter-spacing: -1px;
+  color: rgba(53, 7, 7, 0.9); }
 
 .dsb-navbar {
   display: flex;
@@ -176,15 +185,27 @@ body {
     padding: 0.5rem;
     list-style: none;
     z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.98); }
+    background-color: rgba(255, 255, 255, 0.98);
+    border-left-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    -webkit-box-shadow: -8px 7px 12px 0px #614141;
+    -moz-box-shadow: -8px 7px 12px 0px #614141;
+    box-shadow: -8px 7px 12px 0px #614141; }
   .dsb-navbar nav .hide {
     display: none; }
   .dsb-navbar nav li {
-    padding: 0; }
+    margin: 1.1em;
+    border-color: rgba(53, 7, 7, 0.9);
+    border-bottom-style: solid;
+    border-bottom-width: 1px; }
   .dsb-navbar nav a {
     display: block;
     padding: 0.5rem;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 1.2;
+    font-weight: bold;
+    color: black; }
 
 .hamburger-wrap {
   padding-top: 1.2rem;
@@ -231,3 +252,15 @@ header .comic-homepage-wrapper {
   header .comic-homepage-wrapper .dsb-header-image {
     width: 100%;
     height: auto; }
+
+header .dsb-headline {
+  padding-left: 1.2rem; }
+
+header .dsb-sub-headline {
+  padding-left: 1.2rem; }
+
+main {
+  padding: 1.2rem;
+  padding-top: 0; }
+  main article {
+    word-spacing: -2px; }
