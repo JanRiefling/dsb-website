@@ -3,8 +3,9 @@
   display: flex;
   justify-content: center;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: black;
+  border-bottom-width: 0.2px;
+  border-bottom-color: rgba(68, 67, 67, 0.2);
+  @include box-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 
   .dsb-logo-container {
     margin-right: auto;
