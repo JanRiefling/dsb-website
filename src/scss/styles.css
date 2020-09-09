@@ -6,7 +6,11 @@
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100vw; }
+  body .dsb-wrapper {
+    width: 100%;
+    height: auto; }
 
 @font-face {
   font-family: 'nunitoregular';
@@ -258,6 +262,30 @@ header .dsb-headline {
 
 header .dsb-sub-headline {
   padding-left: 1.2rem; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  font-family: 'open_sanssemibold';
+  background-color: rgba(221, 221, 221, 0.349);
+  color: #2c2b2b;
+  margin: 0; }
+  footer a {
+    text-decoration: none;
+    color: #2c2b2b; }
+  footer ul {
+    list-style-type: none;
+    padding: 1.2rem; }
+  footer .contact-wrapper ul, footer .footer-link-wrapper ul {
+    margin: 0; }
+    footer .contact-wrapper ul li:first-child, footer .footer-link-wrapper ul li:first-child {
+      padding-bottom: 0.5rem;
+      color: rgba(53, 7, 7, 0.9); }
+  footer .footer-last ul {
+    display: flex; }
+    footer .footer-last ul li {
+      padding: 0.5rem; }
 
 main {
   padding: 1.2rem;

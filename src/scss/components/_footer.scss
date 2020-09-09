@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    font-family: 'open_sanssemibold';
+    background-color: rgba(221, 221, 221, 0.349);
+    color: rgb(44, 43, 43);
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: rgb(44, 43, 43);
+    }
+
+    ul {
+        list-style-type: none;
+        padding: $padding-medium;
+    }
+    
+.contact-wrapper, .footer-link-wrapper { 
+    ul {
+        margin: 0;
+
+        li:first-child {
+            padding-bottom: $padding-small;
+            color: $darkish;
+        }
+    }
+}
+
+   .footer-last {
+        ul {
+            display: flex;
+
+            li {
+                padding: $padding-small;
+            }
+        }
+    }
+}
