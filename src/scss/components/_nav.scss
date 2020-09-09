@@ -21,30 +21,49 @@
   }
 
   nav {
+
+
     .dsb-navigation-list {
       display: flex;
       flex-direction: column;
+
       position: absolute;
       right: 0;
       bottom: 0;
       top: 72.8px;
+
       margin: 0;
       padding: $padding-small;
+
       list-style: none;
       z-index: 9999;
       background-color: rgba(255,255,255,0.98);
+
+      border-left-width: 1px;
+      border-left-color:black;
+      border-left-style: solid;
+      @include box-shadow(-8px 7px 12px 0px rgba(97,65,65,1));
+
     }
 
     .hide {
       display: none;
     }
   
-    li {padding: 0; }
+    li {
+      margin: 1.1em;
+      border-color: $darkish;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
   
     a {
       display: block;
       padding: $padding-small;
       text-decoration: none;
+      font-size: 1.2;
+      font-weight: bold;
+      color: black;
     }
   }
 }
