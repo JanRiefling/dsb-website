@@ -6,11 +6,7 @@
 
 body {
   margin: 0;
-  padding: 0;
-  width: 100vw; }
-  body .dsb-wrapper {
-    width: 100%;
-    height: auto; }
+  padding: 0; }
 
 @font-face {
   font-family: 'nunitoregular';
@@ -145,21 +141,24 @@ body {
   font-style: normal; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'nunitoregular'; }
+  font-family: 'nunitoregular';
+  line-height: 1.2; }
 
 body {
   font-family: 'open_sansregular';
-  font-size: 1.2em; }
+  font-size: 5vw;
+  line-height: 1.6; }
 
 h1 {
   font-family: 'nunitolight';
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  font-size: 8vw; }
 
 h3 {
   font-family: 'nunitobold';
   font-size: 1.3em;
   letter-spacing: -1px;
-  color: rgba(53, 7, 7, 0.9); }
+  color: rgba(61, 8, 8, 0.9); }
 
 .dsb-navbar {
   display: flex;
@@ -200,7 +199,7 @@ h3 {
     display: none; }
   .dsb-navbar nav li {
     margin: 1.1em;
-    border-color: rgba(53, 7, 7, 0.9);
+    border-color: rgba(61, 8, 8, 0.9);
     border-bottom-style: solid;
     border-bottom-width: 1px; }
   .dsb-navbar nav a {
@@ -269,26 +268,26 @@ footer {
   font-size: small;
   font-family: 'open_sanssemibold';
   background-color: rgba(221, 221, 221, 0.349);
-  color: #2c2b2b;
-  margin: 0; }
+  color: #2c2b2b; }
   footer a {
     text-decoration: none;
     color: #2c2b2b; }
   footer ul {
     list-style-type: none;
-    padding: 1.2rem; }
-  footer .contact-wrapper ul, footer .footer-link-wrapper ul {
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
     margin: 0; }
-    footer .contact-wrapper ul li:first-child, footer .footer-link-wrapper ul li:first-child {
-      padding-bottom: 0.5rem;
-      color: rgba(53, 7, 7, 0.9); }
+  footer .contact-wrapper li:first-child, footer .footer-link-wrapper li:first-child {
+    padding-bottom: 0.5rem;
+    color: rgba(61, 8, 8, 0.9); }
   footer .footer-last ul {
     display: flex; }
     footer .footer-last ul li {
-      padding: 0.5rem; }
+      padding: 0 0.5rem 0.5rem 0; }
 
 main {
   padding: 1.2rem;
   padding-top: 0; }
   main article {
+    width: 100%;
     word-spacing: -2px; }
