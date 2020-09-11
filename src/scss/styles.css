@@ -294,18 +294,18 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1.2rem; }
   .bfgoe-card-wrapper .bfgoe-card-title img {
-    width: 10em; }
+    width: 8em; }
   .bfgoe-card-wrapper .bfgoe-card-text {
     color: rgba(0, 0, 0, 0.75);
-    padding-bottom: 0.5rem; }
+    padding: 0 1.2rem 1.2rem 0; }
   .bfgoe-card-wrapper .bfgoe-card-action {
     border-top: 0.1px solid grey;
-    padding: 1.2rem 1.2rem 0 1.2rem; }
+    padding: 1.2rem 1.2rem 0 0; }
 
 .bfgoe-button {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid black;
+  border: 0.1em solid rgba(0, 0, 0, 0.507);
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   text-align: center; }
@@ -319,7 +319,4 @@ footer {
 
 main {
   padding: 1.2rem;
-  padding-top: 0;
-  /*    article {
-    word-spacing:-2px;
-   } */ }
+  padding-top: 0; }

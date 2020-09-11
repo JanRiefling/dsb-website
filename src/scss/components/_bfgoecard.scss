@@ -4,19 +4,19 @@
 
     .bfgoe-card-title {
         img {
-            width: 10em;
+            width: 8em;
         }
     }
 
     .bfgoe-card-text{
         color: rgba(0, 0, 0, 0.75);
-        padding-bottom: $padding-small;
+        padding: 0 $padding-medium $padding-medium 0;
     }
 
 
     .bfgoe-card-action {
 
         border-top: 0.1px solid grey;
-        padding: $padding-medium $padding-medium 0 $padding-medium;
+        padding: $padding-medium $padding-medium 0 0;
     }
 }
