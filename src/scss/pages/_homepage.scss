@@ -1,10 +1,49 @@
-@media only screen and (min-width: 1024px) {
+ @media only screen and (min-width: 1024px) {
 
-   .site-content-wrapper {
-       display: grid;
-       grid-template-rows:    repeat(4, 100px);
-       grid-template-columns: repeat(4, 1fr);
+   .start-header {
+       display: flex;
+       justify-content: center;
+       padding-top: $padding-large;
+       
+
+       .comic-homepage-wrapper {
+         order: 2;
+         flex-basis: 40%;
+         width: 100%;
+ 
+         .dsb-header-image {
+             width: 100%;
+             height: auto;
+         }
+     }
+ 
+     .dsb-headline {
+        order: 1;
+        flex-basis: 20%;
+         padding-left: $padding-medium;
+
+         h1 {
+            font-size: 3vw;
+         }
+     }
+ 
+     .dsb-sub-headline {
+        order: 3;
+        flex-basis: 20%;
+         padding-left: $padding-medium;
+
+         h3 {
+            font-size: 2vw;
+         }
+     }
+
    }
+
+   .start-main {
+      display: flex;
+      
+   }
+
    
 
 }

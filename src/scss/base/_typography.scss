@@ -5,13 +5,13 @@ h1, h2, h3, h4, h5, h6 {
 
 body {  
     font-family: 'open_sansregular';
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 h1 {
     font-family: 'nunitolight';
     letter-spacing: -1px;
-    font-size: 6vw;
+    font-size: 3.5vw;
     
 }
 
@@ -19,7 +19,7 @@ h3 {
     font-family: 'nunitobold';
     font-size: 1.3em;
     letter-spacing: -1px;
-    color: $darkish;
+    color: rgba(0,0,0,0.75);
 }
 
 

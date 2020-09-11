@@ -13,8 +13,6 @@ body {
     margin: calc(1em + .5vw) 0; }
 
 .general-wrapper {
-  position: relative;
-  min-height: 100vh;
   max-width: 1450px;
   margin: 0 auto; }
 
@@ -156,18 +154,18 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'open_sansregular';
-  font-size: 4vw; }
+  font-size: 2vw; }
 
 h1 {
   font-family: 'nunitolight';
   letter-spacing: -1px;
-  font-size: 6vw; }
+  font-size: 3.5vw; }
 
 h3 {
   font-family: 'nunitobold';
   font-size: 1.3em;
   letter-spacing: -1px;
-  color: rgba(61, 8, 8, 0.747); }
+  color: rgba(0, 0, 0, 0.75); }
 
 .dsb-navbar {
   display: flex;
@@ -267,12 +265,11 @@ h3 {
 
 header .comic-homepage-wrapper {
   width: 100%;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto; }
+  height: auto; }
   header .comic-homepage-wrapper .dsb-header-image {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin: 0 auto; }
 
 header .dsb-headline {
   padding-left: 1.2rem; }
@@ -281,9 +278,6 @@ header .dsb-sub-headline {
   padding-left: 1.2rem; }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   font-size: small;
@@ -336,7 +330,28 @@ footer {
     text-decoration: none; }
 
 @media only screen and (min-width: 1024px) {
-  .site-content-wrapper {
-    display: grid;
-    grid-template-rows: repeat(4, 100px);
-    grid-template-columns: repeat(4, 1fr); } }
+  .start-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; }
+    .start-header .comic-homepage-wrapper {
+      order: 2;
+      flex-basis: 40%;
+      width: 100%; }
+      .start-header .comic-homepage-wrapper .dsb-header-image {
+        width: 100%;
+        height: auto; }
+    .start-header .dsb-headline {
+      order: 1;
+      flex-basis: 20%;
+      padding-left: 1.2rem; }
+      .start-header .dsb-headline h1 {
+        font-size: 3vw; }
+    .start-header .dsb-sub-headline {
+      order: 3;
+      flex-basis: 20%;
+      padding-left: 1.2rem; }
+      .start-header .dsb-sub-headline h3 {
+        font-size: 2vw; }
+  .start-main {
+    display: flex; } }
