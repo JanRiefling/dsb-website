@@ -12,6 +12,12 @@ body {
     word-break: break-word;
     margin: calc(1em + .5vw) 0; }
 
+.general-wrapper {
+  position: relative;
+  min-height: 100vh;
+  max-width: 1450px;
+  margin: 0 auto; }
+
 @font-face {
   font-family: 'nunitoregular';
   src: url("../fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-regular-webfont.woff") format("woff");
@@ -165,21 +171,15 @@ h3 {
 
 .dsb-navbar {
   display: flex;
-  justify-content: center;
-  border-bottom-style: solid;
-  border-bottom-width: 0.2px;
-  border-bottom-color: rgba(68, 67, 67, 0.2);
   -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
   .dsb-navbar .dsb-logo-container {
-    margin-right: auto;
-    min-width: 120px;
-    max-width: 200px;
-    width: 38%; }
+    flex-basis: 10%; }
     .dsb-navbar .dsb-logo-container .logo {
-      width: 100%;
       padding: 1.2rem; }
+  .dsb-navbar .hamburger-wrap {
+    margin-left: auto; }
   .dsb-navbar nav .dsb-navigation-list {
     display: flex;
     flex-direction: column;
@@ -189,29 +189,44 @@ h3 {
     top: 72.8px;
     margin: 0;
     padding: 0.5rem;
+    background-color: white;
     list-style: none;
-    z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.98);
-    border-left-width: 1px;
-    border-left-color: black;
-    border-left-style: solid;
+    z-index: 200;
+    border-left-width: 1px solid black;
     -webkit-box-shadow: -8px 7px 12px 0px #614141;
     -moz-box-shadow: -8px 7px 12px 0px #614141;
     box-shadow: -8px 7px 12px 0px #614141; }
   .dsb-navbar nav .hide {
     display: none; }
   .dsb-navbar nav li {
-    margin: 1.1em;
-    border-color: rgba(61, 8, 8, 0.747);
-    border-bottom-style: solid;
-    border-bottom-width: 1px; }
+    margin: 0.5em 0.1em 0.1em 0.5em;
+    border-bottom: 1px solid rgba(61, 8, 8, 0.747); }
   .dsb-navbar nav a {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
-    font-size: 1.2;
-    font-weight: bold;
-    color: black; }
+    color: black;
+    font-size: medium; }
+
+@media only screen and (min-width: 1024px) {
+  .dsb-navbar {
+    box-shadow: none; }
+    .dsb-navbar .hamburger-wrap {
+      display: none; }
+    .dsb-navbar nav {
+      align-self: flex-end;
+      flex-basis: 80%; }
+      .dsb-navbar nav .hide {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        margin-bottom: 1%;
+        list-style: none; }
+      .dsb-navbar nav li {
+        margin: 0; }
+      .dsb-navbar nav a {
+        text-decoration: none;
+        font-size: medium; } }
 
 .hamburger-wrap {
   padding-top: 1.2rem;
@@ -251,7 +266,7 @@ h3 {
     transform: translateY(-12px) rotate(45deg); }
 
 header .comic-homepage-wrapper {
-  width: 78vw;
+  width: 100%;
   height: auto;
   margin-right: auto;
   margin-left: auto; }
@@ -266,6 +281,9 @@ header .dsb-sub-headline {
   padding-left: 1.2rem; }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-size: small;
@@ -317,6 +335,8 @@ footer {
     color: black;
     text-decoration: none; }
 
-main {
-  padding: 1.2rem;
-  padding-top: 0; }
+@media only screen and (min-width: 1024px) {
+  .site-content-wrapper {
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 1fr); } }
