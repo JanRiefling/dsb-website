@@ -1,27 +1,22 @@
 
 .dsb-navbar {
   display: flex;
-  justify-content: center;
-  border-bottom-style: solid;
-  border-bottom-width: 0.2px;
-  border-bottom-color: rgba(68, 67, 67, 0.2);
   @include box-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 
   .dsb-logo-container {
-    margin-right: auto;
-    min-width: 120px;
-    max-width: 200px;
-    width: 38%;
+
+    flex-basis: 10%;
 
     .logo {
-      width: 100%;
       padding: $padding-medium;
     }
+  }
 
+  .hamburger-wrap {
+    margin-left: auto;
   }
 
   nav {
-
 
     .dsb-navigation-list {
       display: flex;
@@ -35,13 +30,10 @@
       margin: 0;
       padding: $padding-small;
 
+      background-color: white;
       list-style: none;
-      z-index: 9999;
-      background-color: rgba(255,255,255,0.98);
-
-      border-left-width: 1px;
-      border-left-color:black;
-      border-left-style: solid;
+      z-index: 200;
+      border-left-width: 1px solid black;
       @include box-shadow(-8px 7px 12px 0px rgba(97,65,65,1));
 
     }
@@ -51,23 +43,56 @@
     }
   
     li {
-      margin: 1.1em;
-      border-color: $darkish;
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
+      margin: 0.5em 0.1em 0.1em 0.5em;
+      border-bottom: 1px solid $darkish;
     }
   
     a {
       display: block;
       padding: $padding-small;
       text-decoration: none;
-      font-size: 1.2;
-      font-weight: bold;
       color: black;
+      font-size: medium;
     }
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  
+  .dsb-navbar {
+
+    box-shadow: none;
+
+  .hamburger-wrap{
+    display: none;
+  }
+  
+  nav {
+    align-self: flex-end;
+    flex-basis: 80%;
+
+    .hide {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+      margin-bottom: 1%;
+      list-style: none;
+    }
+
+    li {
+      margin: 0;
+    }
+    
+    
+    a {
+      text-decoration: none;
+      font-size: medium;
+    }
+  }
+
+}
+
+}
 
 
 
