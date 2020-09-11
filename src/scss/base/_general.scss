@@ -10,6 +10,12 @@
 body {
     margin: 0;
     padding: 0;
+
+    p {
+      line-height: calc(1.5em + .2vw);
+      word-break: break-word;
+      margin: calc(1em + .5vw) 0;
+    }
 }
 
 
