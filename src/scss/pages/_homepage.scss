@@ -21,29 +21,33 @@
         order: 1;
         flex-basis: 20%;
          padding-left: $padding-medium;
-
-         h1 {
-            font-size: 3vw;
-         }
      }
  
      .dsb-sub-headline {
         order: 3;
         flex-basis: 20%;
          padding-left: $padding-medium;
-
-         h3 {
-            font-size: 2vw;
-         }
      }
 
    }
 
    .start-main {
       display: flex;
+      justify-content: center;
+      padding-top: $padding-large;
       
-   }
+      .start-article {
+         flex-basis: 30%;
+      }
 
-   
+      .bfgoe-card-wrapper {
+         flex-basis: 50%;
+         max-width: 400px;
+         max-height: 300px;
+
+
+      }
+
+   }
 
 }

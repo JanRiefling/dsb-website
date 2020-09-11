@@ -1,25 +1,43 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'nunitoregular';
-    line-height: 1.2;
+html {
+  font-size: 2vw;
+
+  body {
+    font-family: "open_sansregular";
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "nunitoregular";
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-family: "nunitolight";
+      letter-spacing: -1px;
+      font-size: 2em;
+    }
+
+    h3 {
+      font-family: "nunitobold";
+      letter-spacing: -1px;
+      color: rgba(0, 0, 0, 0.75);
+    }
+
+    p {
+        line-height: calc(1.5em + .2vw);
+        word-break: break-word;
+    }
+
+  }
+
 }
 
-body {  
-    font-family: 'open_sansregular';
-    font-size: 2vw;
-}
-
-h1 {
-    font-family: 'nunitolight';
-    letter-spacing: -1px;
-    font-size: 3.5vw;
-    
-}
-
-h3 {
-    font-family: 'nunitobold';
-    font-size: 1.3em;
-    letter-spacing: -1px;
-    color: rgba(0,0,0,0.75);
-}
-
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 1.5em;
+    }
+  }
 
