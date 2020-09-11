@@ -7,6 +7,10 @@
 body {
   margin: 0;
   padding: 0; }
+  body p {
+    line-height: calc(1.5em + .2vw);
+    word-break: break-word;
+    margin: calc(1em + .5vw) 0; }
 
 @font-face {
   font-family: 'nunitoregular';
@@ -146,19 +150,18 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'open_sansregular';
-  font-size: 5vw;
-  line-height: 1.6; }
+  font-size: 4vw; }
 
 h1 {
   font-family: 'nunitolight';
   letter-spacing: -1px;
-  font-size: 8vw; }
+  font-size: 6vw; }
 
 h3 {
   font-family: 'nunitobold';
   font-size: 1.3em;
   letter-spacing: -1px;
-  color: rgba(61, 8, 8, 0.9); }
+  color: rgba(61, 8, 8, 0.747); }
 
 .dsb-navbar {
   display: flex;
@@ -199,7 +202,7 @@ h3 {
     display: none; }
   .dsb-navbar nav li {
     margin: 1.1em;
-    border-color: rgba(61, 8, 8, 0.9);
+    border-color: rgba(61, 8, 8, 0.747);
     border-bottom-style: solid;
     border-bottom-width: 1px; }
   .dsb-navbar nav a {
@@ -279,15 +282,41 @@ footer {
     margin: 0; }
   footer .contact-wrapper li:first-child, footer .footer-link-wrapper li:first-child {
     padding-bottom: 0.5rem;
-    color: rgba(61, 8, 8, 0.9); }
+    color: rgba(61, 8, 8, 0.747); }
   footer .footer-last ul {
     display: flex; }
     footer .footer-last ul li {
       padding: 0 0.5rem 0.5rem 0; }
 
+.bfgoe-card-wrapper {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.2rem; }
+  .bfgoe-card-wrapper .bfgoe-card-title img {
+    width: 8em; }
+  .bfgoe-card-wrapper .bfgoe-card-text {
+    color: rgba(0, 0, 0, 0.75);
+    padding: 0 1.2rem 1.2rem 0; }
+  .bfgoe-card-wrapper .bfgoe-card-action {
+    border-top: 0.1px solid grey;
+    padding: 1.2rem 1.2rem 0 0; }
+
+.bfgoe-button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid rgba(0, 0, 0, 0.507);
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  text-align: center; }
+  @media all and (max-width: 30em) {
+    .bfgoe-button .bfgoe-button {
+      display: block;
+      margin: 0.4em auto; } }
+  .bfgoe-button a {
+    color: black;
+    text-decoration: none; }
+
 main {
   padding: 1.2rem;
   padding-top: 0; }
-  main article {
-    width: 100%;
-    word-spacing: -2px; }

@@ -1,5 +1,22 @@
 .bfgoe-card-wrapper {
-    display: flex;
-    border: 1px, solid, grey;
-    margin: auto;
+    @include box-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+    padding: $padding-medium;
+
+    .bfgoe-card-title {
+        img {
+            width: 8em;
+        }
+    }
+
+    .bfgoe-card-text{
+        color: rgba(0, 0, 0, 0.75);
+        padding: 0 $padding-medium $padding-medium 0;
+    }
+
+
+    .bfgoe-card-action {
+
+        border-top: 0.1px solid grey;
+        padding: $padding-medium $padding-medium 0 0;
+    }
 }
