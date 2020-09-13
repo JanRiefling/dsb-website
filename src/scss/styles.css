@@ -6,15 +6,23 @@
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: rgba(221, 221, 221, 0.349); }
+  padding: 0; }
   body p {
-    margin: calc(1em + .5vw) 0; }
+    margin: calc(1em + 0.5vw) 0; }
+  body ol {
+    counter-reset: item li;
+      counter-reset-display: block; }
+  body ol > li {
+    counter-increment: item; }
+  body ol ol > li {
+    display: block; }
+  body ol ol > li:before {
+    content: counters(item, ".") ". ";
+    margin-left: -20px; }
 
 .general-wrapper {
   max-width: 1450px;
   margin: 0 auto;
-  background-color: white;
   margin-top: 1%; }
 
 @font-face {
@@ -150,32 +158,41 @@ body {
   font-style: normal; }
 
 html {
-  font-size: 2vw; }
-  html body {
-    font-family: "open_sansregular"; }
-    html body h1,
-    html body h2,
-    html body h3,
-    html body h4,
-    html body h5,
-    html body h6 {
-      font-family: "nunitoregular";
-      line-height: 1.2; }
-    html body h1 {
-      font-family: "nunitolight";
-      letter-spacing: -1px;
-      font-size: 2em; }
-    html body h3 {
-      font-family: "nunitobold";
-      letter-spacing: -1px;
-      color: rgba(0, 0, 0, 0.75); }
-    html body p {
-      line-height: calc(1.5em + .2vw);
-      word-break: break-word; }
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680)); } }
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px; } }
+
+body {
+  font-family: "open_sansregular"; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    font-family: "nunitoregular";
+    line-height: 1.2; }
+  body h1 {
+    font-family: "nunitolight";
+    letter-spacing: -1px;
+    font-size: 2em; }
+  body h3 {
+    font-family: "nunitobold";
+    letter-spacing: -1px;
+    color: rgba(0, 0, 0, 0.75); }
+  body p {
+    line-height: calc(1.5em + .2vw);
+    word-break: break-word; }
 
 @media screen and (min-width: 1024px) {
-  html {
-    font-size: 1.5em; } }
+  body {
+    font-size: 1em; } }
 
 .dsb-navbar {
   display: flex;
@@ -276,7 +293,6 @@ footer {
   flex-direction: column;
   font-size: small;
   font-family: 'open_sanssemibold';
-  background-color: rgba(221, 221, 221, 0.349);
   color: #2c2b2b; }
   footer a {
     text-decoration: none;

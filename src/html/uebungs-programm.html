@@ -1,66 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../scss/styles.css" />
     <title>Übungsprogramm</title>
-</head>
-<body>
-    <div class="dsb-navbar">
+  </head>
+  <body>
+    <div class="general-wrapper">
+      <div class="dsb-navbar">
         <div class="dsb-logo-container">
-            <img src="../images/svg/Logo.svg" alt="Text Dialektische Strategien in der Beratung" class="logo">
+          <a href="../../index.html">
+            <img
+              src="../images/svg/Logo.svg"
+              alt="Text Dialektische Strategien in der Beratung"
+              class="logo"
+            />
+          </a>
         </div>
         <div class="hamburger-wrap">
-            <input type="checkbox" id="hamburg" onclick="openNavList()">
-            <label for="hamburg" class="hamburg">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </label>
+          <input type="checkbox" id="hamburg" onclick="openNavList()" />
+          <label for="hamburg" class="hamburg">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </label>
         </div>
         <nav>
-            <ul class="hide" id="nav-list">
-                <li><a href="src/html/einzelberatung.html">DSB in der Einzelberatung</a></li>
-                <li><a href="src/html/uebungs-programm.html">DSB Übungsprogramme</a></li>
-                <li><a href="src/html/fortbildung.html">Fortbildung</a></li>
-                <li><a href="src/html/kontakt.html">Kontakt</a></li>
-                <li><a href="src/html/aboutus.html">Über uns</a></li>
-            </ul>
+          <ul class="hide" id="nav-list">
+            <li><a href="einzelberatung.html">DSB in der Einzelberatung</a></li>
+            <li><a href="uebungs-programm.html">DSB Übungsprogramme</a></li>
+            <li><a href="fortbildung.html">Fortbildung</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="aboutus.html">Über uns</a></li>
+          </ul>
         </nav>
-    </div>
-    <footer>
+      </div>
+      <header>
+        <h1>DSB – Übungsprogramme: Das Fertigkeitentraining</h1>
+      </header>
+      <main>
+        <article>
+          <p>
+            Das DSB – Fertigkeitentraining ist psychoedukativer Unterricht, in
+            dem Wissen über intrapsychisches und interpersonelles Geschehen
+            vermittelt wird. Es werden Fertigkeiten im Umgang mit sich selbst
+            und anderen vermittelt. Verhaltensweisen werden auf den Prüfstand
+            gestellt, alternative Verhaltensweisen können entwickelt und
+            eingeübt werden.
+          </p>
+          <h3>Das Übungsprogramm umfasst folgende Themen:</h3>
+          <ul>
+            <li>
+              Achtsamkeit (Sich seiner selbst gewahr werden mit dem Ziel,
+              bewusst Kontrolle zu erleben über Gedanken, Gefühle, den Körper
+              und die Situation)
+            </li>
+            <li>
+              Stresstoleranz (Stress/Stressphasen und Krisen bewältigen und
+              vorbeugen)
+            </li>
+            <li>
+              Gelungene Kommunikation/zwischenmenschliche Fertigkeiten
+              (angenehme und stabile Beziehungen aufbauen und pflegen)
+            </li>
+            <li>
+              Selbststärkung (einen realistischen Blick auf sich selbst haben
+              und das Selbstwertgefühl stärken)
+            </li>
+          </ul>
+        </article>
+      </main>
+      <footer>
         <div class="contact-wrapper">
-            <ul>
-                <li>Kontakt</li>
-                <li>Mrs. and Mr. Doe</li>
-                <li>Tel.: 0123456791</li>
-                <li>Email: test@test.test</li>
-            </ul>
+          <ul>
+            <li>Kontakt</li>
+            <li>Mrs. and Mr. Doe</li>
+            <li>Tel.: 0123456791</li>
+            <li>Email: test@test.test</li>
+          </ul>
         </div>
         <div class="footer-link-wrapper">
-            <ul>
-                <li>Weiterführende Links</li>
-                <li>Über uns</li>
-                <li>Flyer</li>
-                <li>BFGoe</li>
-                <li>Anderer Link</li>
-            </ul>
+          <ul>
+            <li>Weiterführende Links</li>
+            <li>Über uns</li>
+            <li>Flyer</li>
+            <li>BFGoe</li>
+            <li>Anderer Link</li>
+          </ul>
         </div>
         <div class="footer-last">
-            <ul>
-                <a href="#">
-                    <li>Start</li>
-                </a>
-                <a href="#">
-                    <li>Impressum</li>
-                </a>
-                <a href="#">
-                    <li>Datenschutz</li>
-                </a>
-            </ul>
+          <ul>
+            <a href="#">
+              <li>Start</li>
+            </a>
+            <a href="#">
+              <li>Impressum</li>
+            </a>
+            <a href="#">
+              <li>Datenschutz</li>
+            </a>
+          </ul>
         </div>
-    </footer>
+      </footer>
+    </div>
     <script type="text/javascript" src="../js/index.js"></script>
-</body>
+  </body>
 </html>
