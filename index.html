@@ -1,121 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="src/scss/styles.css" />
 
     <title>DSB</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="general-wrapper">
-    <div class="dsb-navbar">
+      <div class="dsb-navbar">
         <div class="dsb-logo-container">
-            <img src="src/images/svg/Logo.svg" alt="Text Dialektische Strategien in der Beratung" class="logo">
+          <img
+            src="src/images/svg/Logo.svg"
+            alt="Text Dialektische Strategien in der Beratung"
+            class="logo"
+          />
         </div>
         <div class="hamburger-wrap">
-            <input type="checkbox" id="hamburg" onclick="openNavList()">
-            <label for="hamburg" class="hamburg">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </label>
+          <input type="checkbox" id="hamburg" onclick="openNavList()" />
+          <label for="hamburg" class="hamburg">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </label>
         </div>
         <nav>
-            <ul class="hide" id="nav-list">
-                <li><a href="src/html/einzelberatung.html">DSB in der Einzelberatung</a></li>
-                <li><a href="src/html/uebungs-programm.html">DSB Übungsprogramme</a></li>
-                <li><a href="src/html/fortbildung.html">Fortbildung</a></li>
-                <li><a href="src/html/kontakt.html">Kontakt</a></li>
-                <li><a href="src/html/aboutus.html">Über uns</a></li>
-            </ul>
+          <ul class="hide" id="nav-list">
+            <li>
+              <a href="src/html/einzelberatung.html"
+                >DSB in der Einzelberatung</a
+              >
+            </li>
+            <li>
+              <a href="src/html/uebungs-programm.html">DSB Übungsprogramme</a>
+            </li>
+            <li><a href="src/html/fortbildung.html">Fortbildung</a></li>
+            <li><a href="src/html/kontakt.html">Kontakt</a></li>
+            <li><a href="src/html/aboutus.html">Über uns</a></li>
+          </ul>
         </nav>
-    </div>
-    <div class="site-content-wrapper">
-    <header>
-        <div class="comic-homepage-wrapper">
-            <img src="src/images/svg/comic-homepage.svg" alt="Person mit Korb geht weg entlang. Woelfe im Hintergrund"
-                class="dsb-header-image">
-        </div>
-        <div class="dsb-headline">
+      </div>
+        <header class="start-header">
+          <div class="comic-homepage-wrapper">
+            <img
+              src="src/images/svg/comic-homepage.svg"
+              alt="Person mit Korb geht weg entlang. Woelfe im Hintergrund"
+              class="dsb-header-image"
+            />
+          </div>
+          <div class="dsb-headline">
             <h1>Dialektische Strategien in der Beratung</h1>
-        </div>
-        <div class="dsb-sub-headline">
+          </div>
+          <div class="dsb-sub-headline">
             <h3>Wirksam beraten – eigene Ressourcen schützen</h3>
-        </div>
-    </header>
-    <main>
-        <article>
+          </div>
+        </header>
+        <main class="start-main">
+          <article class="start-article">
+              <h3>Was ist DSB?</h3>
             <p>
-                Berater*innen und im pädagogischen Bereich Tätige arbeiten zunehmend mit Menschen,
-                deren strukturelle Einschränkungen der Persönlichkeit es erschweren, ihren Alltag zu
-                bewältigen. Schwierigkeiten bei der Impulssteuerung, der Affektregulation sowie der Selbst-
-                und Fremdwahrnehmung wirken sich auf ihren Umgang mit sich selbst und anderen aus.
+              Berater*innen und im pädagogischen Bereich Tätige arbeiten
+              zunehmend mit Menschen, deren strukturelle Einschränkungen der
+              Persönlichkeit es erschweren, ihren Alltag zu bewältigen.
+              Schwierigkeiten bei der Impulssteuerung, der Affektregulation
+              sowie der Selbst- und Fremdwahrnehmung wirken sich auf ihren
+              Umgang mit sich selbst und anderen aus.
             </p>
             <p>
-                Die Dialektischen Strategien in der Beratung sind eine Methode, die auf einer
-                persönlichkeitspsychologischen Grundlage basiert und den Arbeitsprozess ökonomisch für
-                die beratenden und wirksam für die Klient*innen gestaltet.
+              Die Dialektischen Strategien in der Beratung sind eine Methode,
+              die auf einer persönlichkeitspsychologischen Grundlage basiert und
+              den Arbeitsprozess ökonomisch für die beratenden und wirksam für
+              die Klient*innen gestaltet.
             </p>
-        </article>
-        <div class="bfgoe-card-wrapper">
+          </article>
+          <div class="bfgoe-card-wrapper">
             <div class="bfgoe-card-title">
-                <img src="src/images/bfgoe_logo2.png" alt="logo der bfgoe">
+              <img src="src/images/bfgoe_logo2.png" alt="logo der bfgoe" />
             </div>
             <div class="bfgoe-card-text">
-                Dialektische Strategien in der Beratung ist eine Kooperation mit der 
-                Beschäftigungsförderung Göttingen
+              Dialektische Strategien in der Beratung ist eine Kooperation mit
+              der Beschäftigungsförderung Göttingen
             </div>
             <div class="bfgoe-card-action">
-                <div class="bfgoe-button">
-            <a href="https://www.bfgoe.de/fileadmin/Redaktion_15/download/projekte_flyer/Flyer_DSB_2019_Web.pdf" target="_blank">
-                zum Flyer
-            </a>
-        </div>
-            <div class="bfgoe-button">
-            <a href="https://www.bfgoe.de/dsb/" target="_blank"> zur BFGoe</a>
+              <div class="bfgoe-button">
+                <a
+                  href="https://www.bfgoe.de/fileadmin/Redaktion_15/download/projekte_flyer/Flyer_DSB_2019_Web.pdf"
+                  target="_blank"
+                >
+                  zum Flyer
+                </a>
+              </div>
+              <div class="bfgoe-button">
+                <a href="https://www.bfgoe.de/dsb/" target="_blank">
+                  zur BFGoe</a
+                >
+              </div>
             </div>
-        </div>
-        </div>
-    </main>
-</div>
-    <footer>
+          </div>
+        </main>
+      <footer>
         <div class="contact-wrapper">
-            <ul>
-                <li>Kontakt</li>
-                <li>Mrs. and Mr. Doe</li>
-                <li>Tel.: 0123456791</li>
-                <li>Email: test@test.test</li>
-            </ul>
+          <ul>
+            <li>Kontakt</li>
+            <li>Mrs. and Mr. Doe</li>
+            <li>Tel.: 0123456791</li>
+            <li>Email: test@test.test</li>
+          </ul>
         </div>
         <div class="footer-link-wrapper">
-            <ul>
-                <li>Weiterführende Links</li>
-                <li>Über uns</li>
-                <li>Flyer</li>
-                <li>BFGoe</li>
-                <li>Anderer Link</li>
-            </ul>
+          <ul>
+            <li>Weiterführende Links</li>
+            <li>Über uns</li>
+            <li>Flyer</li>
+            <li>BFGoe</li>
+            <li>Anderer Link</li>
+          </ul>
         </div>
         <div class="footer-last">
-            <ul>
-                <a href="#">
-                    <li>Start</li>
-                </a>
-                <a href="#">
-                    <li>Impressum</li>
-                </a>
-                <a href="#">
-                    <li>Datenschutz</li>
-                </a>
-            </ul>
+          <ul>
+            <a href="#">
+              <li>Start</li>
+            </a>
+            <a href="#">
+              <li>Impressum</li>
+            </a>
+            <a href="#">
+              <li>Datenschutz</li>
+            </a>
+          </ul>
         </div>
-    </footer>
-</div>
+      </footer>
+    </div>
     <script type="text/javascript" src="src/js/index.js"></script>
-</body>
-
+  </body>
 </html>

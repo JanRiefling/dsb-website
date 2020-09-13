@@ -1,16 +1,21 @@
 .bfgoe-card-wrapper {
-    @include box-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
-    padding: $padding-medium;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    border-radius: 20px;
+    padding: $padding-small;
+    max-width: 400px;
+    min-width: 150px;
 
     .bfgoe-card-title {
+        padding: $padding-medium;
         img {
             width: 8em;
         }
     }
 
     .bfgoe-card-text{
-        color: rgba(0, 0, 0, 0.75);
+        color: rgba(0, 0, 0, 0.849);
         padding: 0 $padding-medium $padding-medium 0;
+        font-size: 1em;
     }
 
 
