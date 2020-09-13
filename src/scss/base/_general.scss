@@ -10,6 +10,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgba(221, 221, 221, 0.349);
+
 
     p {
       margin: calc(1em + .5vw) 0;
@@ -20,4 +22,6 @@ body {
 .general-wrapper {
   max-width: 1450px;
   margin: 0 auto;
+  background-color: white;
+  margin-top: 1%;
 }
