@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../scss/styles.css" />
 
     <title>Über Uns</title>
-</head>
-<body>
-    <div class="dsb-navbar">
+  </head>
+  <body>
+    <div class="general-wrapper">
+      <div class="dsb-navbar">
         <div class="dsb-logo-container">
-            <img src="../images/svg/Logo.svg" alt="Text Dialektische Strategien in der Beratung" class="logo">
+          <a href="../../index.html">
+            <img
+              src="../images/svg/Logo.svg"
+              alt="Text Dialektische Strategien in der Beratung"
+              class="logo"
+            />
+          </a>
         </div>
         <div class="hamburger-wrap">
-            <input type="checkbox" id="hamburg" onclick="openNavList()">
-            <label for="hamburg" class="hamburg">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </label>
+          <input type="checkbox" id="hamburg" onclick="openNavList()" />
+          <label for="hamburg" class="hamburg">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </label>
         </div>
         <nav>
-            <ul class="hide" id="nav-list">
-                <li><a href="src/html/einzelberatung.html">DSB in der Einzelberatung</a></li>
-                <li><a href="src/html/uebungs-programm.html">DSB Übungsprogramme</a></li>
-                <li><a href="src/html/fortbildung.html">Fortbildung</a></li>
-                <li><a href="src/html/kontakt.html">Kontakt</a></li>
-                <li><a href="src/html/aboutus.html">Über uns</a></li>
-            </ul>
+          <ul class="hide" id="nav-list">
+            <li><a href="einzelberatung.html">DSB in der Einzelberatung</a></li>
+            <li><a href="uebungs-programm.html">DSB Übungsprogramme</a></li>
+            <li><a href="fortbildung.html">Fortbildung</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="aboutus.html">Über uns</a></li>
+          </ul>
         </nav>
-    </div>
-    <footer>
-        <div class="contact-wrapper">
+      </div>
+      <header>
+        <h1>Über uns</h1>
+      </header>
+      <main>
+        <div class="person-one">
+          <h5>Willy Herbold-Schaar</h5>
+          <img src="#" alt="example">
+          <p>
+            ist Facharzt für psychosomatische Medizin und für Psychiatrie und
+            Psychotherapie und ärztlicher Leiter der Abteilung für
+            Psychotherapie und Traumatherapie an einem Fachklinikum der
+            Regionalversorgung. Seine Arbeitsschwerpunkte sind die Diagnostik
+            und Behandlung von Menschen mit Störungen der Persönlichkeit. Er ist
+            außerdem tätig in der Aus- und Weiterbildung von Ärzt*innen,
+            Psycholog*innen und Pädagog*innen.
+          </p>
+        </div>
+        <div class="person-two">
+            <h5>Renate Schaar</h5>
+            <img src="#" alt="example">
+            <p>
+                ist Pädagogin mit einer Ausbildung in Systemischer Beratung. 
+                In ihrer Beratungspraxis in den Bereichen der beruflichen Rehabilitation 
+                und der beruflichen Integration von Menschen mit Schwerbehinderung gab 
+                die Arbeit mit Klient*innen, die durch Wahrnehmung und Verhalten immer 
+                wieder am Erreichen realistischer Ziele gehindert schienen, Anstoß zur 
+                Entwicklung eines störungsbezogenen Beratungskonzeptes.
+            </p>
+        </div>
+        <div class="about-contact-bfgoe">
+            <p>Die DSB-Weiterbildung wird unter dem Dach der Beschäftigungsförderung 
+                Göttingen (BFGoe) durchgeführt. Fragen dazu beantwortet
+            </p>
             <ul>
-                <li>Kontakt</li>
-                <li>Mrs. and Mr. Doe</li>
-                <li>Tel.: 0123456791</li>
-                <li>Email: test@test.test</li>
+                <li>Andrea Schneider</li>
+                <li>Tel. 0551 400-4628</li>
+                <li>Mail: a.schneider@goettingen.de</li>
+                <li>www.bfgoe.de</li>
             </ul>
+        </div>
+        <div class="about-contact-dsb">
+            <p>Wenn Sie mehr über die DSB wissen wollen oder bei einem Wunsch nach Austausch wenden Sie sich bitte an</p>
+            <ul>
+                <li>wherbold@web.de</li>
+                <li>oder</li>
+                <li>renate-schaar@web.de</li>
+            </ul>
+        </div>
+      </main>
+      <footer>
+        <div class="contact-wrapper">
+          <ul>
+            <li>Kontakt</li>
+            <li>Mrs. and Mr. Doe</li>
+            <li>Tel.: 0123456791</li>
+            <li>Email: test@test.test</li>
+          </ul>
         </div>
         <div class="footer-link-wrapper">
-            <ul>
-                <li>Weiterführende Links</li>
-                <li>Über uns</li>
-                <li>Flyer</li>
-                <li>BFGoe</li>
-                <li>Anderer Link</li>
-            </ul>
+          <ul>
+            <li>Weiterführende Links</li>
+            <li>Über uns</li>
+            <li>Flyer</li>
+            <li>BFGoe</li>
+            <li>Anderer Link</li>
+          </ul>
         </div>
         <div class="footer-last">
-            <ul>
-                <a href="#">
-                    <li>Start</li>
-                </a>
-                <a href="#">
-                    <li>Impressum</li>
-                </a>
-                <a href="#">
-                    <li>Datenschutz</li>
-                </a>
-            </ul>
+          <ul>
+            <a href="#">
+              <li>Start</li>
+            </a>
+            <a href="#">
+              <li>Impressum</li>
+            </a>
+            <a href="#">
+              <li>Datenschutz</li>
+            </a>
+          </ul>
         </div>
-    </footer>
+      </footer>
+    </div>
     <script type="text/javascript" src="../js/index.js"></script>
-    
-</body>
+  </body>
 </html>
