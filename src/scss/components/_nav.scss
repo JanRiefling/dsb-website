@@ -59,35 +59,52 @@
 @media only screen and (min-width: 1024px) {
   
   .dsb-navbar {
+    display: flex;
+    flex-wrap: wrap;
 
     box-shadow: none;
+
+    .dsb-logo-container {
+      align-self: flex-start;
+      flex: 1 1 100%;
+    }
 
   .hamburger-wrap{
     display: none;
   }
   
   nav {
-    align-self: flex-end;
-    flex-basis: 80%;
-
+    flex: 1 1 100%;
 
     .hide {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       padding: 0;
-      margin-bottom: 1%;
+      margin: 0;
       list-style: none;
     }
 
     li {
       margin: 0;
+      margin: 0 2%;
+     
     }
     
     
     a {
       text-decoration: none;
-      font-size: medium;
+      font-size: 1.1em;
     }
+
+    li:hover {
+      border-width: 5px;
+      @include transition(border-width 0.5s ease-in-out);
+    }
+
+    .active-nav-link {
+      border-width: 1px;
+    }
+
   }
 
 }

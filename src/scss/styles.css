@@ -18,7 +18,7 @@ body {
     display: block; }
   body ol ol > li:before {
     content: counters(item, ".") ". ";
-    margin-left: -20px; }
+    margin-left: -33px; }
 
 .general-wrapper {
   max-width: 1450px;
@@ -157,16 +157,23 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+/* Define minimum font size */
 html {
-  font-size: 16px; }
+  font-size: 1rem; }
 
-@media screen and (min-width: 320px) {
+/* Define breakpoints and font sizes */
+@media (min-width: 640px) and (max-width: 1023px) {
   html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680)); } }
+    font-size: 1.0625rem; } }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   html {
-    font-size: 22px; } }
+    font-size: 1.125rem; } }
+
+/* Define max font size and viewport */
+@media (min-width: 1280px) {
+  html {
+    font-size: 1.1875rem; } }
 
 body {
   font-family: "open_sansregular"; }
@@ -233,23 +240,37 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .dsb-navbar {
+    display: flex;
+    flex-wrap: wrap;
     box-shadow: none; }
+    .dsb-navbar .dsb-logo-container {
+      align-self: flex-start;
+      flex: 1 1 100%; }
     .dsb-navbar .hamburger-wrap {
       display: none; }
     .dsb-navbar nav {
-      align-self: flex-end;
-      flex-basis: 80%; }
+      flex: 1 1 100%; }
       .dsb-navbar nav .hide {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 0;
-        margin-bottom: 1%;
+        margin: 0;
         list-style: none; }
       .dsb-navbar nav li {
-        margin: 0; }
+        margin: 0;
+        margin: 0 2%; }
       .dsb-navbar nav a {
         text-decoration: none;
-        font-size: medium; } }
+        font-size: 1.1em; }
+      .dsb-navbar nav li:hover {
+        border-width: 5px;
+        -webkit-transition: border-width 0.5s ease-in-out;
+        -moz-transition: border-width 0.5s ease-in-out;
+        -ms-transition: border-width 0.5s ease-in-out;
+        -o-transition: border-width 0.5s ease-in-out;
+        transition: border-width 0.5s ease-in-out; }
+      .dsb-navbar nav .active-nav-link {
+        border-width: 1px; } }
 
 .hamburger-wrap {
   padding-top: 1.2rem;
@@ -311,11 +332,10 @@ footer {
       padding: 0 0.5rem 0.5rem 0; }
 
 .bfgoe-card-wrapper {
-  border: 2px solid rgba(0, 0, 0, 0.507);
-  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.507);
+  border-radius: 10px;
   padding: 0.5rem;
-  max-width: 400px;
-  min-width: 150px; }
+  max-width: 400px; }
   .bfgoe-card-wrapper .bfgoe-card-title {
     padding: 1.2rem; }
     .bfgoe-card-wrapper .bfgoe-card-title img {
@@ -323,8 +343,9 @@ footer {
   .bfgoe-card-wrapper .bfgoe-card-text {
     color: rgba(0, 0, 0, 0.849);
     padding: 0 1.2rem 1.2rem 0;
-    font-size: 1em; }
+    width: 100%; }
   .bfgoe-card-wrapper .bfgoe-card-action {
+    display: flex;
     border-top: 0.1px solid grey;
     padding: 1.2rem 1.2rem 0 0; }
 
@@ -334,8 +355,7 @@ footer {
   border: 0.1em solid rgba(0, 0, 0, 0.507);
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.3em;
-  text-align: center;
-  font-size: medium; }
+  text-align: center; }
   @media all and (max-width: 30em) {
     .bfgoe-button .bfgoe-button {
       display: block;
@@ -344,40 +364,23 @@ footer {
     color: black;
     text-decoration: none; }
 
-.start-header {
-  display: flex;
-  flex-direction: column; }
-  .start-header .comic-homepage-wrapper {
-    width: 50%;
-    align-self: center; }
-    .start-header .comic-homepage-wrapper .dsb-header-image {
-      width: 100%;
-      height: auto; }
-  .start-header .dsb-headline {
-    align-self: center; }
-  .start-header .dsb-sub-headline {
-    align-self: center; }
+.comic-homepage-wrapper {
+  width: 75%;
+  align-self: center; }
+  .comic-homepage-wrapper .dsb-header-image {
+    width: 100%;
+    height: auto; }
 
-.start-main {
-  display: flex;
-  flex-direction: column; }
-  .start-main .start-article {
-    padding: 5rem; }
-  .start-main .bfgoe-card-wrapper {
-    flex-basis: 100%;
-    margin-left: auto;
-    margin-right: auto; }
+@media only screen and (min-width: 680px) and (max-width: 1023px) {
+  .comic-homepage-wrapper {
+    width: 50%; } }
 
 @media only screen and (min-width: 1024px) {
   .start-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5rem; }
+    justify-content: center; }
     .start-header .comic-homepage-wrapper {
       order: 2;
-      flex-basis: 40%;
-      width: 100%; }
+      width: 45%; }
       .start-header .comic-homepage-wrapper .dsb-header-image {
         width: 100%;
         height: auto; }
@@ -390,14 +393,56 @@ footer {
       flex-basis: 15%;
       padding-left: 1.2rem; }
   .start-main {
+    flex-direction: column; }
+    .start-main .start-article {
+      padding-top: 5rem; }
+    .start-main .bfgoe-card-wrapper {
+      align-self: center;
+      margin: 5rem auto; } }
+
+.fortbildung-teilnahmevoraussetzungen, .fortbildung-curriculum, .fortbildung-aufbau-umfang {
+  padding-top: 1.2rem; }
+  .fortbildung-teilnahmevoraussetzungen ul, .fortbildung-teilnahmevoraussetzungen ol, .fortbildung-curriculum ul, .fortbildung-curriculum ol, .fortbildung-aufbau-umfang ul, .fortbildung-aufbau-umfang ol {
+    padding-left: 1.5em; }
+    .fortbildung-teilnahmevoraussetzungen ul li, .fortbildung-teilnahmevoraussetzungen ol li, .fortbildung-curriculum ul li, .fortbildung-curriculum ol li, .fortbildung-aufbau-umfang ul li, .fortbildung-aufbau-umfang ol li {
+      margin: 0.1em; }
+
+@media only screen and (min-width: 1024px) {
+  .uebungs-programm-sub-headline {
+    padding-top: 1.2rem; }
+  .uebungs-programm-list li {
+    padding: 0.5rem; } }
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 1024px) {
+  main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 5rem;
-    padding-top: 0;
-    flex-wrap: wrap; }
-    .start-main .start-article {
-      flex: 1 1 100%;
-      padding-top: 0; }
-    .start-main .bfgoe-card-wrapper {
-      flex: 1 1 100%; } }
+    flex-wrap: wrap;
+    justify-content: center; }
+    main article {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left; }
+
+@media only screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem; }
+    header h1 {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto; } }

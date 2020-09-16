@@ -1,55 +1,26 @@
+.comic-homepage-wrapper {
+  width: 75%;
+  align-self: center;
 
-  .start-header {
-    display: flex;
-    flex-direction: column;
-
-    .comic-homepage-wrapper {
-      
-      width: 50%;
-      align-self: center;
-
-      .dsb-header-image {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .dsb-headline {
-      align-self: center;
-    }
-
-    .dsb-sub-headline {
-      align-self: center;
-    }
+  .dsb-header-image {
+    width: 100%;
+    height: auto;
   }
+}
 
-  .start-main {
-    display: flex;
-    flex-direction: column;
-   
-    .start-article {
-      padding: $padding-large;
-    }
-
-    .bfgoe-card-wrapper {
-      flex-basis: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    } 
+@media only screen and (min-width: 680px) and (max-width: 1023px) {
+  .comic-homepage-wrapper {
+    width: 50%;
   }
-
+}
 
 @media only screen and (min-width: 1024px) {
   .start-header {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding: $padding-large;
 
     .comic-homepage-wrapper {
       order: 2;
-      flex-basis: 40%;
-      width: 100%;
+      width: 45%;
 
       .dsb-header-image {
         width: 100%;
@@ -71,20 +42,15 @@
   }
 
   .start-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: $padding-large;
-    padding-top: 0;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     .start-article {
-      flex: 1 1 100%;
-      padding-top: 0;
+      padding-top: $padding-large;
     }
 
     .bfgoe-card-wrapper {
-      flex: 1 1 100%;
+      align-self: center;
+      margin: $padding-large auto;
     }
   }
 }
