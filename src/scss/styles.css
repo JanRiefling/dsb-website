@@ -309,7 +309,8 @@ body {
     transform: translateY(-12px) rotate(45deg); }
 
 footer {
-  background-color: rgba(78, 76, 76, 0.048); }
+  /* background-color: rgba(78, 76, 76, 0.048);  */
+  border-top: 1px solid lightgray; }
   footer a {
     text-decoration: none;
     color: #2c2b2b; }
@@ -322,15 +323,24 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: small;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px; }
+    max-width: 800px;
+    /*     .footer-last {
+      ul {
+        display: flex;
+
+        li {
+          padding: 0 $padding-small $padding-small 0;
+          text-decoration: underline;
+        }
+      }
+    } */ }
     footer .general-footer-wrapper .dsb-footer-wrapper {
       padding: 1.2rem;
       font-family: "open_sanssemibold";
-      color: rgba(36, 36, 36, 0.781);
-      border-bottom: 1px solid gray; }
+      color: rgba(36, 36, 36, 0.781); }
       footer .general-footer-wrapper .dsb-footer-wrapper img {
         width: 7em; }
       footer .general-footer-wrapper .dsb-footer-wrapper p {
@@ -354,11 +364,6 @@ footer {
         color: #2c2b2b; }
     footer .general-footer-wrapper .footer-link-wrapper {
       padding-top: 0; }
-    footer .general-footer-wrapper .footer-last ul {
-      display: flex; }
-      footer .general-footer-wrapper .footer-last ul li {
-        padding: 0 0.5rem 0.5rem 0;
-        text-decoration: underline; }
 
 @media only screen and (min-width: 680px) {
   footer {
@@ -367,23 +372,26 @@ footer {
     footer .general-footer-wrapper {
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: 1.2rem; }
+      padding: 1.2rem; }
       footer .general-footer-wrapper .dsb-footer-wrapper {
-        flex: 1 1 100%; }
+        flex: 1 1 34%;
+        padding: 0; }
       footer .general-footer-wrapper .contact-wrapper,
       footer .general-footer-wrapper .footer-link-wrapper {
-        flex: 1 1 50%; }
-      footer .general-footer-wrapper .footer-link-wrapper {
-        padding-top: 1.2rem; }
+        flex: 1 1 22%;
+        padding: 0; }
+        footer .general-footer-wrapper .contact-wrapper ul,
+        footer .general-footer-wrapper .footer-link-wrapper ul {
+          padding: 0; }
       footer .general-footer-wrapper .footer-last {
-        margin: 1rem 0 1rem 0; } }
+        align-self: center; } }
 
 .bfgoe-card-wrapper {
   border: 1px solid rgba(0, 0, 0, 0.507);
   border-radius: 10px;
   padding: 0.5rem;
   margin: 5rem 0;
-  max-width: 400px; }
+  max-width: 350px; }
   .bfgoe-card-wrapper .bfgoe-card-title {
     padding: 1.2rem; }
     .bfgoe-card-wrapper .bfgoe-card-title img {
@@ -391,7 +399,8 @@ footer {
   .bfgoe-card-wrapper .bfgoe-card-text {
     color: rgba(0, 0, 0, 0.849);
     padding: 0 1.2rem 1.2rem 0;
-    width: 100%; }
+    width: 100%;
+    font-size: 0.8em; }
   .bfgoe-card-wrapper .bfgoe-card-action {
     display: flex;
     border-top: 0.1px solid grey;
@@ -399,7 +408,7 @@ footer {
 
 .bfgoe-button {
   display: inline-block;
-  padding: 0.35em 1.2em;
+  padding: 0.3em 1em;
   border: 0.1em solid rgba(0, 0, 0, 0.37);
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.3em;
@@ -411,7 +420,7 @@ footer {
   .bfgoe-button a {
     color: black;
     text-decoration: none;
-    font-size: 0.9em; }
+    font-size: 0.7em; }
 
 .comic-homepage-wrapper {
   width: 75%;
@@ -420,16 +429,20 @@ footer {
     width: 100%;
     height: auto; }
 
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
+@media only screen and (min-width: 550px) and (max-width: 1023px) {
   .comic-homepage-wrapper {
-    width: 55%; } }
+    width: 55%; }
+  .dsb-headline, .dsb-sub-headline {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media only screen and (min-width: 1024px) {
   .start-header {
     justify-content: center; }
     .start-header .comic-homepage-wrapper {
       order: 2;
-      width: 45%; }
+      width: 30%; }
       .start-header .comic-homepage-wrapper .dsb-header-image {
         width: 100%;
         height: auto; }
@@ -439,23 +452,29 @@ footer {
       padding-right: 1.2rem; }
     .start-header .dsb-sub-headline {
       order: 3;
-      flex-basis: 15%;
+      flex-basis: 20%;
       padding-left: 1.2rem; }
   .start-main {
     flex-direction: column; }
     .start-main .start-article {
-      padding-top: 5rem; }
+      padding-top: 1.2rem; }
     .start-main .bfgoe-card-wrapper {
       align-self: center;
       margin: 5rem auto; } }
 
 .person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
-  width: 55%;
+  width: 80%;
   margin-left: auto;
-  margin-right: auto; }
-  .person-one img, .person-two img, .about-contact-dsb img, .about-contact-bfgoe img {
+  margin-right: auto;
+  padding: 0.5rem; }
+  .person-one ul, .person-two ul, .about-contact-dsb ul, .about-contact-bfgoe ul {
+    list-style-type: none; }
+  .person-one .person-header img, .person-two .person-header img, .about-contact-dsb .person-header img, .about-contact-bfgoe .person-header img {
     width: 20%;
     height: auto; }
+
+.einzelberatung-wrap {
+  padding-bottom: 5rem; }
 
 .fortbildung-teilnahmevoraussetzungen, .fortbildung-curriculum, .fortbildung-aufbau-umfang {
   padding-top: 1.2rem; }
@@ -464,7 +483,16 @@ footer {
     .fortbildung-teilnahmevoraussetzungen ul li, .fortbildung-teilnahmevoraussetzungen ol li, .fortbildung-curriculum ul li, .fortbildung-curriculum ol li, .fortbildung-aufbau-umfang ul li, .fortbildung-aufbau-umfang ol li {
       margin: 0.1em; }
 
+.uebungs-wrap img {
+  display: block;
+  width: 80%; }
+
 @media only screen and (min-width: 1024px) {
+  .uebungs-wrap {
+    padding-bottom: 5rem; }
+    .uebungs-wrap img {
+      padding: 1.2rem 0;
+      width: 60%; }
   .uebungs-programm-sub-headline {
     padding-top: 1.2rem; }
   .uebungs-programm-list li {
@@ -475,6 +503,17 @@ main {
   flex-direction: column;
   width: 80%;
   margin: 0 auto; }
+
+@media only screen and (min-width: 550px) and (max-width: 1023px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    main article {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; } }
 
 @media only screen and (min-width: 1024px) {
   main {
@@ -493,6 +532,12 @@ header {
   width: 80%;
   margin: 0 auto;
   text-align: left; }
+
+@media only screen and (min-width: 550px) and (max-width: 1023px) {
+  header {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media only screen and (min-width: 1024px) {
   header {

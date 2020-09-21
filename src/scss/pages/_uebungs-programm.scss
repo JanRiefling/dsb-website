@@ -1,4 +1,24 @@
+.uebungs-wrap {
+  img {
+    display: block;
+    width: 80%;
+  }
+}
+
+
+
+
+
 @media only screen and (min-width: 1024px) {
+
+  .uebungs-wrap {
+    padding-bottom: $padding-large;
+
+    img {
+      padding: $padding-medium 0;
+      width: 60%;
+    }
+  }
   .uebungs-programm-sub-headline {
     padding-top: $padding-medium;
   }

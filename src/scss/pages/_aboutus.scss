@@ -1,8 +1,15 @@
 .person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
-    @include text-alignment;
+    @include text-alignment-deux;
+    padding: $padding-small;
 
-    img {
-        width: 20%;
-        height: auto;
+    ul {
+        list-style-type: none;
+    }
+
+    .person-header {
+        img {
+            width: 20%;
+            height: auto;
+        }
     }
 }

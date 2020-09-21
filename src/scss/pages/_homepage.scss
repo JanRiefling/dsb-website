@@ -8,9 +8,13 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
+@media only screen and (min-width: 550px) and (max-width: 1023px) {
   .comic-homepage-wrapper {
     width: 55%;
+  }
+
+  .dsb-headline, .dsb-sub-headline {
+    @include text-alignment-deux;
   }
 }
 
@@ -20,7 +24,7 @@
 
     .comic-homepage-wrapper {
       order: 2;
-      width: 45%;
+      width: 30%;
 
       .dsb-header-image {
         width: 100%;
@@ -36,7 +40,7 @@
 
     .dsb-sub-headline {
       order: 3;
-      flex-basis: 15%;
+      flex-basis: 20%;
       padding-left: $padding-medium;
     }
   }
@@ -45,7 +49,7 @@
     flex-direction: column;
 
     .start-article {
-      padding-top: $padding-large;
+      padding-top: $padding-medium;
     }
 
     .bfgoe-card-wrapper {
