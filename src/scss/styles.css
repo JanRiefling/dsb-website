@@ -22,8 +22,7 @@ body {
 
 .general-wrapper {
   max-width: 1450px;
-  margin: 0 auto;
-  margin-top: 1%; }
+  margin: 0 auto; }
 
 @font-face {
   font-family: 'nunitoregular';
@@ -157,11 +156,9 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-/* Define minimum font size */
 html {
   font-size: 1rem; }
 
-/* Define breakpoints and font sizes */
 @media (min-width: 640px) and (max-width: 1023px) {
   html {
     font-size: 1.0625rem; } }
@@ -170,7 +167,6 @@ html {
   html {
     font-size: 1.125rem; } }
 
-/* Define max font size and viewport */
 @media (min-width: 1280px) {
   html {
     font-size: 1.1875rem; } }
@@ -216,7 +212,7 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    top: 72.8px;
+    top: 6em;
     margin: 0;
     padding: 0.5rem;
     background-color: white;
@@ -246,6 +242,9 @@ body {
     .dsb-navbar .dsb-logo-container {
       align-self: flex-start;
       flex: 1 1 100%; }
+      .dsb-navbar .dsb-logo-container img {
+        width: 10em;
+        max-width: 11em; }
     .dsb-navbar .hamburger-wrap {
       display: none; }
     .dsb-navbar nav {
@@ -261,16 +260,16 @@ body {
         margin: 0 2%; }
       .dsb-navbar nav a {
         text-decoration: none;
-        font-size: 1.1em; }
-      .dsb-navbar nav li:hover {
-        border-width: 5px;
-        -webkit-transition: border-width 0.5s ease-in-out;
-        -moz-transition: border-width 0.5s ease-in-out;
-        -ms-transition: border-width 0.5s ease-in-out;
-        -o-transition: border-width 0.5s ease-in-out;
-        transition: border-width 0.5s ease-in-out; }
+        font-size: 0.9em; }
+      .dsb-navbar nav li:hover a {
+        color: rgba(61, 8, 8, 0.747);
+        -webkit-transition: color 0.5s ease-in-out;
+        -moz-transition: color 0.5s ease-in-out;
+        -ms-transition: color 0.5s ease-in-out;
+        -o-transition: color 0.5s ease-in-out;
+        transition: color 0.5s ease-in-out; }
       .dsb-navbar nav .active-nav-link {
-        border-width: 1px; } }
+        border-width: 3px; } }
 
 .hamburger-wrap {
   padding-top: 1.2rem;
@@ -310,11 +309,7 @@ body {
     transform: translateY(-12px) rotate(45deg); }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  font-size: small;
-  font-family: 'open_sanssemibold';
-  color: #2c2b2b; }
+  background-color: rgba(78, 76, 76, 0.048); }
   footer a {
     text-decoration: none;
     color: #2c2b2b; }
@@ -323,18 +318,71 @@ footer {
     padding-left: 1.2rem;
     padding-top: 1.2rem;
     margin: 0; }
-  footer .contact-wrapper li:first-child, footer .footer-link-wrapper li:first-child {
-    padding-bottom: 0.5rem;
-    color: rgba(61, 8, 8, 0.747); }
-  footer .footer-last ul {
-    display: flex; }
-    footer .footer-last ul li {
-      padding: 0 0.5rem 0.5rem 0; }
+  footer .general-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; }
+    footer .general-footer-wrapper .dsb-footer-wrapper {
+      padding: 1.2rem;
+      font-family: "open_sanssemibold";
+      color: rgba(36, 36, 36, 0.781);
+      border-bottom: 1px solid gray; }
+      footer .general-footer-wrapper .dsb-footer-wrapper img {
+        width: 7em; }
+      footer .general-footer-wrapper .dsb-footer-wrapper p {
+        display: block;
+        max-width: 20em;
+        font-size: 0.9em;
+        line-height: 15px;
+        margin: 0;
+        padding: 0.5rem 0; }
+    footer .general-footer-wrapper .contact-wrapper,
+    footer .general-footer-wrapper .footer-link-wrapper {
+      padding: 1.2rem 0; }
+      footer .general-footer-wrapper .contact-wrapper li:first-child,
+      footer .general-footer-wrapper .footer-link-wrapper li:first-child {
+        color: rgba(61, 8, 8, 0.747); }
+      footer .general-footer-wrapper .contact-wrapper li,
+      footer .general-footer-wrapper .footer-link-wrapper li {
+        padding-bottom: 0.5rem; }
+      footer .general-footer-wrapper .contact-wrapper a li:first-child,
+      footer .general-footer-wrapper .footer-link-wrapper a li:first-child {
+        color: #2c2b2b; }
+    footer .general-footer-wrapper .footer-link-wrapper {
+      padding-top: 0; }
+    footer .general-footer-wrapper .footer-last ul {
+      display: flex; }
+      footer .general-footer-wrapper .footer-last ul li {
+        padding: 0 0.5rem 0.5rem 0;
+        text-decoration: underline; }
+
+@media only screen and (min-width: 680px) {
+  footer {
+    width: 100%;
+    margin: 0; }
+    footer .general-footer-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 1.2rem; }
+      footer .general-footer-wrapper .dsb-footer-wrapper {
+        flex: 1 1 100%; }
+      footer .general-footer-wrapper .contact-wrapper,
+      footer .general-footer-wrapper .footer-link-wrapper {
+        flex: 1 1 50%; }
+      footer .general-footer-wrapper .footer-link-wrapper {
+        padding-top: 1.2rem; }
+      footer .general-footer-wrapper .footer-last {
+        margin: 1rem 0 1rem 0; } }
 
 .bfgoe-card-wrapper {
   border: 1px solid rgba(0, 0, 0, 0.507);
   border-radius: 10px;
   padding: 0.5rem;
+  margin: 5rem 0;
   max-width: 400px; }
   .bfgoe-card-wrapper .bfgoe-card-title {
     padding: 1.2rem; }
@@ -352,7 +400,7 @@ footer {
 .bfgoe-button {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid rgba(0, 0, 0, 0.507);
+  border: 0.1em solid rgba(0, 0, 0, 0.37);
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.3em;
   text-align: center; }
@@ -362,7 +410,8 @@ footer {
       margin: 0.4em auto; } }
   .bfgoe-button a {
     color: black;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 0.9em; }
 
 .comic-homepage-wrapper {
   width: 75%;
@@ -371,9 +420,9 @@ footer {
     width: 100%;
     height: auto; }
 
-@media only screen and (min-width: 680px) and (max-width: 1023px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
   .comic-homepage-wrapper {
-    width: 50%; } }
+    width: 55%; } }
 
 @media only screen and (min-width: 1024px) {
   .start-header {
@@ -399,6 +448,14 @@ footer {
     .start-main .bfgoe-card-wrapper {
       align-self: center;
       margin: 5rem auto; } }
+
+.person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto; }
+  .person-one img, .person-two img, .about-contact-dsb img, .about-contact-bfgoe img {
+    width: 20%;
+    height: auto; }
 
 .fortbildung-teilnahmevoraussetzungen, .fortbildung-curriculum, .fortbildung-aufbau-umfang {
   padding-top: 1.2rem; }

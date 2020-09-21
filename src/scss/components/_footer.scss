@@ -1,37 +1,105 @@
 footer {
+  background-color: rgba(78, 76, 76, 0.048);
+  
+
+  a {
+    text-decoration: none;
+    color: rgb(44, 43, 43);
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: $padding-medium;
+    padding-top: $padding-medium;
+    margin: 0;
+  }
+
+  .general-footer-wrapper {
     display: flex;
     flex-direction: column;
     font-size: small;
-    font-family: 'open_sanssemibold';
-    color: rgb(44, 43, 43);
+    @include text-alignment-deux;
+    max-width: 800px;
 
-    a {
-        text-decoration: none;
-        color: rgb(44, 43, 43);
-    }
+    .dsb-footer-wrapper {
+      padding: $padding-medium;
+      font-family: "open_sanssemibold";
+      color: rgba(36, 36, 36, 0.781);
+      border-bottom: 1px solid gray;
 
-    ul {
-        list-style-type: none;
-        padding-left: $padding-medium;
-        padding-top: $padding-medium;
+      img {
+        width: 7em;
+      }
+
+      p {
+        display: block;
+        max-width: 20em;
+        font-size: 0.9em;
+        line-height: 15px;
         margin: 0;
+        padding: $padding-small 0;
+      }
     }
-    
-.contact-wrapper, .footer-link-wrapper {
 
-        li:first-child {
-            padding-bottom: $padding-small;
-            color: $darkish;
+    .contact-wrapper,
+    .footer-link-wrapper {
+
+        padding: $padding-medium 0;
+
+      li:first-child {
+        color: $darkish;
+      }
+
+      li {
+        padding-bottom: $padding-small;
+      }
+
+      a li:first-child {
+        color: rgb(44, 43, 43);
+      }
+    }
+
+    .footer-link-wrapper {
+        padding-top: 0;
+    }
+
+    .footer-last {
+      ul {
+        display: flex;
+
+        li {
+          padding: 0 $padding-small $padding-small 0;
+          text-decoration: underline;
         }
+      }
+    }
+  }
 }
 
-   .footer-last {
-        ul {
-            display: flex;
+@media only screen and (min-width: 680px) {
+  footer {
+    width: 100%;
+    margin: 0;
 
-            li {
-                padding: 0 $padding-small $padding-small 0;
-            }
-        }
+    .general-footer-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: $padding-medium;
+
+      .dsb-footer-wrapper {
+        flex: 1 1 100%;
+      }
+
+      .contact-wrapper,
+      .footer-link-wrapper {
+        flex: 1 1 50%;
+      }
+      .footer-link-wrapper {
+        padding-top: $padding-medium;
     }
+      .footer-last {
+        margin: 1rem 0 1rem 0;
+      }
+    }
+  }
 }

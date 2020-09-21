@@ -24,7 +24,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      top: 72.8px;
+      top: 6em;
 
       margin: 0;
       padding: $padding-small;
@@ -67,6 +67,11 @@
     .dsb-logo-container {
       align-self: flex-start;
       flex: 1 1 100%;
+      
+      img {
+        width: 10em;
+        max-width: 11em;
+      }
     }
 
   .hamburger-wrap{
@@ -93,16 +98,20 @@
     
     a {
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 0.9em;
     }
 
     li:hover {
-      border-width: 5px;
-      @include transition(border-width 0.5s ease-in-out);
+     
+      a {
+        color: $darkish;
+        @include transition(color 0.5s ease-in-out);
+      }
+     
     }
 
     .active-nav-link {
-      border-width: 1px;
+      border-width: 3px;
     }
 
   }

@@ -1,9 +1,9 @@
-/* Define minimum font size */
+
 html {
   font-size:1rem;
  }
  
- /* Define breakpoints and font sizes */
+
  @media (min-width:640px) and (max-width:1023px) {
   html {
    font-size: 1.0625rem;
@@ -16,7 +16,7 @@ html {
   }
  }
  
- /* Define max font size and viewport */
+
  @media (min-width:1280px) {
   html {
    font-size: 1.1875rem;

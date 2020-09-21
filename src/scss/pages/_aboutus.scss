@@ -1,0 +1,8 @@
+.person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
+    @include text-alignment;
+
+    img {
+        width: 20%;
+        height: auto;
+    }
+}
