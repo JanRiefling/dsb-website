@@ -1,5 +1,4 @@
 .person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
-    @include text-alignment-deux;
     padding: $padding-small;
 
     ul {
@@ -12,4 +11,8 @@
             height: auto;
         }
     }
+}
+
+.about-contact-bfgoe {
+    padding-bottom: $padding-large;
 }

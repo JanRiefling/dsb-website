@@ -9,9 +9,6 @@ footer {
 
   ul {
     list-style-type: none;
-    padding-left: $padding-medium;
-    padding-top: $padding-medium;
-    margin: 0;
   }
 
   .general-footer-wrapper {
@@ -45,35 +42,43 @@ footer {
     .contact-wrapper,
     .footer-link-wrapper {
 
-        padding: $padding-medium 0;
+        padding: $padding-small 0;
 
       li:first-child {
         color: $darkish;
       }
 
-      li {
-        padding-bottom: $padding-small;
-      }
-
-      a li:first-child {
-        color: rgb(44, 43, 43);
-      }
-    }
-
-    .footer-link-wrapper {
-        padding-top: 0;
-    }
-
-/*     .footer-last {
       ul {
-        display: flex;
 
+        padding: 0 $padding-medium;
+        margin: 0;
         li {
-          padding: 0 $padding-small $padding-small 0;
-          text-decoration: underline;
+          padding-bottom: $padding-small;
+        }
+  
+        a li:first-child {
+          color: rgb(44, 43, 43);
         }
       }
-    } */
+    }
+  }
+
+  .footer-last {
+
+    width: 80%;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      padding: 0 $padding-small;
+      justify-content: flex-start;
+      margin: 0 0 1rem 0;
+      li {
+        text-decoration: underline;
+        font-size: small;
+        margin: 0.9em;
+    }
+    }
   }
 }
 
@@ -95,14 +100,19 @@ footer {
       .contact-wrapper,
       .footer-link-wrapper {
         flex: 1 1 22%;
-        padding: 0;
+        padding: $padding-medium 0 0 0;
 
         ul {
             padding: 0;
         }
       }
-      .footer-last {
-        align-self: center;
+    }
+    .footer-last {
+        
+      width: 70%;
+
+      ul {
+        @include text-alignment;
       }
     }
   }

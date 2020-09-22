@@ -3,23 +3,27 @@ header {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  text-align: left;
+  padding-top: $padding-medium;
 }
 
 @media only screen and (min-width: 550px) and (max-width: 1023px) {
 
   header {
-    @include text-alignment-deux;
+    display: flex;
+    flex-direction: row;
+  
+
+  h1, h3 {
+      @include text-alignment-deux;
+    }
   }
 }
 
 @media only screen and (min-width: 1024px) {
   header {
-    display: flex;
-    flex-direction: row;
     padding-top: $padding-large;
 
-    h1 {
+    h1, h3 {
       @include text-alignment;
     }
   }
