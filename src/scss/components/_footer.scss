@@ -16,8 +16,6 @@ footer {
     flex-direction: column;
     font-size: small;
     @include text-alignment-deux;
-    max-width: 800px;
-
 
     .dsb-footer-wrapper {
       padding: $padding-medium;
@@ -40,7 +38,8 @@ footer {
     }
 
     .contact-wrapper,
-    .footer-link-wrapper {
+    .footer-link-wrapper,
+    .footer-last {
 
         padding: $padding-small 0;
 
@@ -62,27 +61,9 @@ footer {
       }
     }
   }
-
-  .footer-last {
-
-    width: 80%;
-    margin: 0 auto;
-
-    ul {
-      display: flex;
-      padding: 0 $padding-small;
-      justify-content: flex-start;
-      margin: 0 0 1rem 0;
-      li {
-        text-decoration: underline;
-        font-size: small;
-        margin: 0.9em;
-    }
-    }
-  }
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 560px) and (max-width: 1000px ) {
   footer {
     width: 100%;
     margin: 0;
@@ -91,15 +72,24 @@ footer {
       flex-direction: row;
       flex-wrap: wrap;
       padding: $padding-medium;
+      @include text-alignment-footer;
 
       .dsb-footer-wrapper {
-        flex: 1 1 34%;
+        flex: 1 1 100%;
         padding: 0;
       }
 
       .contact-wrapper,
-      .footer-link-wrapper {
-        flex: 1 1 22%;
+      .footer-link-wrapper
+       {
+        flex: 1 1 50%;
+        padding: $padding-medium 0 0 0;
+
+        ul {
+            padding: 0;
+        }
+      }
+      .footer-last {
         padding: $padding-medium 0 0 0;
 
         ul {
@@ -107,12 +97,36 @@ footer {
         }
       }
     }
-    .footer-last {
-        
-      width: 70%;
+  }
+}
 
-      ul {
-        @include text-alignment;
+@media only screen and (min-width: 1001px) {
+  footer {
+    width: 100%;
+    margin: 0;
+
+    .general-footer-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: $padding-medium;
+      padding-left: $padding-large;
+      @include text-alignment-footer;
+      max-width: 800px;
+
+      .dsb-footer-wrapper {
+        flex: 1 1 100%;
+        padding: 0;
+      }
+
+      .contact-wrapper,
+      .footer-link-wrapper,
+      .footer-last {
+        flex: 1 1 33%;
+        padding: $padding-medium 0 0 0;
+
+        ul {
+            padding: 0;
+        }
       }
     }
   }
