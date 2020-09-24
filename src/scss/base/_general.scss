@@ -28,12 +28,11 @@ body {
 
   ol ol > li:before {
     content: counters(item, ".") ". ";
-    margin-left: -20px;
+    margin-left: -33px;
   }
 }
 
 .general-wrapper {
   max-width: 1450px;
   margin: 0 auto;
-  margin-top: 1%;
 }

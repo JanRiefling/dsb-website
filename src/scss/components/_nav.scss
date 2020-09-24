@@ -24,7 +24,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      top: 72.8px;
+      top: 6em;
 
       margin: 0;
       padding: $padding-small;
@@ -59,35 +59,61 @@
 @media only screen and (min-width: 1024px) {
   
   .dsb-navbar {
+    display: flex;
+    flex-wrap: wrap;
 
     box-shadow: none;
+
+    .dsb-logo-container {
+      align-self: flex-start;
+      flex: 1 1 100%;
+      
+      img {
+        width: 10em;
+        max-width: 11em;
+      }
+    }
 
   .hamburger-wrap{
     display: none;
   }
   
   nav {
-    align-self: flex-end;
-    flex-basis: 80%;
-
+    flex: 1 1 100%;
 
     .hide {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       padding: 0;
-      margin-bottom: 1%;
+      margin: 0;
       list-style: none;
     }
 
     li {
       margin: 0;
+      margin: 0 2%;
+     
     }
     
     
     a {
       text-decoration: none;
-      font-size: medium;
+      font-size: 0.9em;
     }
+
+    li:hover {
+     
+      a {
+        color: $darkish;
+        @include transition(color 0.2s ease-in-out);
+      }
+     
+    }
+
+    .active-nav-link {
+      border-width: 3px;
+    }
+
   }
 
 }

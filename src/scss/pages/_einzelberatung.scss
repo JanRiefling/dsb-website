@@ -1,0 +1,14 @@
+.einzelberatung-wrap {
+    padding-bottom: $padding-large;
+
+    .einzelberatung-img-wrapper {
+
+        @include text-alignment;
+        img {
+            margin: 0 auto;
+            padding: $padding-medium 0;
+            width: 60%;
+          }
+    }
+
+}

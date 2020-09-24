@@ -1,9 +1,9 @@
 .bfgoe-card-wrapper {
-    border: 2px solid rgba(0, 0, 0, 0.507);
-    border-radius: 20px;
+    border: 1px solid $darkish;
+    border-radius: 10px;
     padding: $padding-small;
-    max-width: 400px;
-    min-width: 150px;
+    margin: $padding-large 0;
+    max-width: 350px;
 
     .bfgoe-card-title {
         padding: $padding-medium;
@@ -15,12 +15,13 @@
     .bfgoe-card-text{
         color: rgba(0, 0, 0, 0.849);
         padding: 0 $padding-medium $padding-medium 0;
-        font-size: 1em;
+        width: 100%;
+        font-size: 0.8em;
     }
 
 
     .bfgoe-card-action {
-
+        display: flex;
         border-top: 0.1px solid grey;
         padding: $padding-medium $padding-medium 0 0;
     }

@@ -1,0 +1,15 @@
+.fortbildung-teilnahmevoraussetzungen, .fortbildung-curriculum, .fortbildung-aufbau-umfang {
+    padding-top: $padding-medium;
+
+   ul, ol {
+       padding-left: 1.5em;
+
+       li {
+           margin: 0.1em;
+       }
+   }
+}
+
+.fortbildung-aufbau-umfang {
+    padding-bottom: $padding-large;
+}

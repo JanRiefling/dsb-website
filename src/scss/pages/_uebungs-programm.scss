@@ -1,0 +1,61 @@
+.uebungs-wrap {
+  padding-bottom: $padding-large;
+
+  img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .uebungs-programm-sub-headline {
+    padding-top: $padding-medium;
+  }
+  .uebungs-programm-list {
+    li {
+      padding: $padding-small;
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1023px) {
+
+  .uebungs-wrap {
+    padding-bottom: $padding-large;
+
+    img {
+      margin: 0 auto;
+      padding: $padding-medium 0;
+      width: 60%;
+    }
+  }
+  .uebungs-programm-sub-headline {
+    padding-top: $padding-medium;
+  }
+  .uebungs-programm-list {
+    li {
+      padding: $padding-small;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .uebungs-wrap {
+    padding-bottom: $padding-large;
+
+    img {
+      margin: 0 auto;
+      padding: $padding-medium 0;
+      width: 60%;
+    }
+  }
+  .uebungs-programm-sub-headline {
+    padding-top: $padding-medium;
+  }
+  .uebungs-programm-list {
+    li {
+      padding: $padding-small;
+    }
+  }
+}

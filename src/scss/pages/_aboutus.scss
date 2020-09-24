@@ -1,0 +1,18 @@
+.person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
+    padding: $padding-small;
+
+    ul {
+        list-style-type: none;
+    }
+
+    .person-header {
+        img {
+            width: 20%;
+            height: auto;
+        }
+    }
+}
+
+.about-contact-bfgoe {
+    padding-bottom: $padding-large;
+}
