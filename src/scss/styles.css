@@ -415,36 +415,89 @@ footer {
   border-radius: 10px;
   padding: 0.5rem;
   margin: 5rem 0;
-  max-width: 350px; }
+  max-width: 300px; }
   .bfgoe-card-wrapper .bfgoe-card-title {
-    padding: 1.2rem; }
+    padding: 1.2rem 0 0.5rem 1.2rem; }
     .bfgoe-card-wrapper .bfgoe-card-title img {
-      width: 8em; }
+      width: 6em; }
   .bfgoe-card-wrapper .bfgoe-card-text {
-    color: rgba(0, 0, 0, 0.849);
-    padding: 0 1.2rem 1.2rem 0;
+    color: rgba(0, 0, 0, 0.705);
+    padding: 0 0 0 1.2rem;
     width: 100%;
-    font-size: 0.8em; }
+    font-family: "open_sansregular";
+    font-size: 0.9em; }
+  .bfgoe-card-wrapper .bfgoe-logo-wrap {
+    padding: 1.2rem; }
+    .bfgoe-card-wrapper .bfgoe-logo-wrap img {
+      width: 4.5em; }
   .bfgoe-card-wrapper .bfgoe-card-action {
     display: flex;
     border-top: 0.1px solid grey;
     padding: 1.2rem 1.2rem 0 0; }
 
+@media screen and (min-width: 1023px) {
+  .bfgoe-card-wrapper {
+    min-width: 400px; } }
+
 .bfgoe-button {
-  display: inline-block;
-  padding: 0.3em 1em;
-  border: 0.1em solid rgba(0, 0, 0, 0.37);
-  margin: 0 0.3em 0.3em 0;
+  border: 0.05em solid rgba(61, 8, 8, 0.582);
+  padding: 0.3rem;
+  margin: 0 0.3em 0.3em 0.5em;
   border-radius: 0.3em;
-  text-align: center; }
-  @media all and (max-width: 30em) {
-    .bfgoe-button .bfgoe-button {
-      display: block;
-      margin: 0.4em auto; } }
+  /*     @media all and (max-width: 30em) {
+        .bfgoe-button {
+            display: block;
+            margin: 0.4em auto;
+        }
+    } */ }
   .bfgoe-button a {
-    color: black;
+    color: rgba(0, 0, 0, 0.842);
     text-decoration: none;
-    font-size: 0.7em; }
+    font-size: 0.8em;
+    padding: 0.5rem; }
+
+@media screen and (min-width: 1023px) {
+  .bfgoe-button:hover {
+    background-color: #ad1616;
+    border: none;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    opacity: 0.8; }
+    .bfgoe-button:hover a {
+      color: white;
+      -webkit-transition: color 0.2s ease-in;
+      -moz-transition: color 0.2s ease-in;
+      -ms-transition: color 0.2s ease-in;
+      -o-transition: color 0.2s ease-in;
+      transition: color 0.2s ease-in; } }
+
+.btn-wrap {
+  padding: 1.2rem;
+  padding-left: 0;
+  max-width: 400px;
+  height: auto;
+  margin: 2em 0; }
+  .btn-wrap .fortbildung-btn {
+    font-size: 0.9em;
+    font-family: "open_sansregular";
+    padding: 1.2rem;
+    background-color: white;
+    border: 0.1em solid rgba(61, 8, 8, 0.582); }
+
+@media screen and (min-width: 1000px) {
+  .fortbildung-btn:hover {
+    background-color: #ad1616;
+    border: none;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    opacity: 0.8;
+    color: white; } }
 
 .comic-homepage-wrapper {
   width: 75%;
@@ -452,6 +505,12 @@ footer {
   .comic-homepage-wrapper .dsb-header-image {
     width: 100%;
     height: auto; }
+
+hr {
+  width: 10%;
+  margin: 5em auto;
+  border: none;
+  border-bottom: 0.5rem dotted rgba(61, 8, 8, 0.582); }
 
 @media only screen and (min-width: 550px) and (max-width: 1023px) {
   .start-header {
@@ -486,12 +545,15 @@ footer {
         height: auto; }
     .start-header .dsb-headline {
       order: 1;
-      flex-basis: 15%;
-      padding-right: 1.2rem; }
+      flex-basis: 25%;
+      padding-right: 1.2rem;
+      font-size: 1.5rem; }
     .start-header .dsb-sub-headline {
       order: 3;
-      flex-basis: 20%;
-      padding-left: 1.2rem; }
+      flex-basis: 30%;
+      padding-left: 1.2rem;
+      font-size: 1.5rem;
+      align-self: flex-end; }
   .start-main {
     flex-direction: column; }
     .start-main .start-article {
@@ -508,8 +570,13 @@ footer {
     width: 20%;
     height: auto; }
 
+.about-contact-dsb {
+  margin-top: 5rem; }
+
 .about-contact-bfgoe {
   padding-bottom: 5rem; }
+  .about-contact-bfgoe .bfgoe-card-wrapper {
+    margin-top: 1em; }
 
 .einzelberatung-wrap {
   padding-bottom: 5rem; }
@@ -522,15 +589,34 @@ footer {
       padding: 1.2rem 0;
       width: 60%; }
 
-.fortbildung-teilnahmevoraussetzungen, .fortbildung-curriculum, .fortbildung-aufbau-umfang {
+.fortbildung-teilnahmevoraussetzungen,
+.fortbildung-curriculum,
+.fortbildung-aufbau-umfang {
   padding-top: 1.2rem; }
-  .fortbildung-teilnahmevoraussetzungen ul, .fortbildung-teilnahmevoraussetzungen ol, .fortbildung-curriculum ul, .fortbildung-curriculum ol, .fortbildung-aufbau-umfang ul, .fortbildung-aufbau-umfang ol {
+  .fortbildung-teilnahmevoraussetzungen ul,
+  .fortbildung-teilnahmevoraussetzungen ol,
+  .fortbildung-curriculum ul,
+  .fortbildung-curriculum ol,
+  .fortbildung-aufbau-umfang ul,
+  .fortbildung-aufbau-umfang ol {
     padding-left: 1.5em; }
-    .fortbildung-teilnahmevoraussetzungen ul li, .fortbildung-teilnahmevoraussetzungen ol li, .fortbildung-curriculum ul li, .fortbildung-curriculum ol li, .fortbildung-aufbau-umfang ul li, .fortbildung-aufbau-umfang ol li {
+    .fortbildung-teilnahmevoraussetzungen ul li,
+    .fortbildung-teilnahmevoraussetzungen ol li,
+    .fortbildung-curriculum ul li,
+    .fortbildung-curriculum ol li,
+    .fortbildung-aufbau-umfang ul li,
+    .fortbildung-aufbau-umfang ol li {
       margin: 0.1em; }
 
+.fortbildung-curriculum > ol > li:nth-child(n + 2):nth-child(-n + 3) {
+  padding-top: 1.2rem; }
+
 .fortbildung-aufbau-umfang {
-  padding-bottom: 5rem; }
+  padding-bottom: 0.5rem; }
+  .fortbildung-aufbau-umfang p {
+    margin: 0; }
+  .fortbildung-aufbau-umfang h5 {
+    padding-top: 1.2rem; }
 
 .uebungs-wrap {
   padding-bottom: 5rem; }
@@ -613,8 +699,16 @@ header {
 
 @media only screen and (min-width: 1024px) {
   header {
+    width: 100%;
     padding-top: 5rem; }
     header h1, header h3 {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto; }
+  .header-rest {
+    width: 80%;
+    padding-top: 5rem; }
+    .header-rest h1, .header-rest h3 {
       width: 55%;
       margin-left: auto;
       margin-right: auto; } }

@@ -1,15 +1,32 @@
-.fortbildung-teilnahmevoraussetzungen, .fortbildung-curriculum, .fortbildung-aufbau-umfang {
-    padding-top: $padding-medium;
+.fortbildung-teilnahmevoraussetzungen,
+.fortbildung-curriculum,
+.fortbildung-aufbau-umfang {
+  padding-top: $padding-medium;
 
-   ul, ol {
-       padding-left: 1.5em;
+  ul,
+  ol {
+    padding-left: 1.5em;
 
-       li {
-           margin: 0.1em;
-       }
-   }
+    li {
+      margin: 0.1em;
+    }
+  }
+}
+
+
+.fortbildung-curriculum > ol > li:nth-child(n + 2):nth-child(-n + 3) {
+  padding-top: $padding-medium;
 }
 
 .fortbildung-aufbau-umfang {
-    padding-bottom: $padding-large;
+
+    padding-bottom: $padding-small;
+
+    p {
+        margin:0;
+    }
+
+    h5 {
+        padding-top: $padding-medium;
+    }
 }
