@@ -1,6 +1,6 @@
 .vscode
 node_modules
 package-lock.json
-.jpg
-.svg
-.png
+*.jpg
+*.svg
+*.png
