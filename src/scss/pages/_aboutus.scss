@@ -1,27 +1,34 @@
-.person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
-    padding: $padding-small;
+.person-one,
+.person-two,
+.about-contact-dsb,
+.about-contact-bfgoe {
+  padding: $padding-small;
 
-    ul {
-        list-style-type: none;
+  ul {
+    list-style-type: none;
+  }
+
+  .person-header {
+    .person-img-container-w {
+      background-image: url("../images/Herbold.jpg");
+      @include person-img;
     }
 
-    .person-header {
-        img {
-            width: 20%;
-            height: auto;
-        }
+    .person-img-container-r {
+      background-image: url("../images/IMG_7806.jpg");
+      @include person-img;
     }
+  }
 }
 
 .about-contact-dsb {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .about-contact-bfgoe {
-    padding-bottom: $padding-large;
+  padding-bottom: $padding-large;
 
-
-    .bfgoe-card-wrapper {
-        margin-top: 1em;
-    }
+  .bfgoe-card-wrapper {
+    margin-top: 1em;
+  }
 }

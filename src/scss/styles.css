@@ -562,13 +562,40 @@ hr {
       align-self: center;
       margin: 5rem auto; } }
 
-.person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
+.person-one,
+.person-two,
+.about-contact-dsb,
+.about-contact-bfgoe {
   padding: 0.5rem; }
-  .person-one ul, .person-two ul, .about-contact-dsb ul, .about-contact-bfgoe ul {
+  .person-one ul,
+  .person-two ul,
+  .about-contact-dsb ul,
+  .about-contact-bfgoe ul {
     list-style-type: none; }
-  .person-one .person-header img, .person-two .person-header img, .about-contact-dsb .person-header img, .about-contact-bfgoe .person-header img {
-    width: 20%;
-    height: auto; }
+  .person-one .person-header .person-img-container-w,
+  .person-two .person-header .person-img-container-w,
+  .about-contact-dsb .person-header .person-img-container-w,
+  .about-contact-bfgoe .person-header .person-img-container-w {
+    background-image: url("../images/Herbold.jpg");
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 5px darkred;
+    border-radius: 5px; }
+  .person-one .person-header .person-img-container-r,
+  .person-two .person-header .person-img-container-r,
+  .about-contact-dsb .person-header .person-img-container-r,
+  .about-contact-bfgoe .person-header .person-img-container-r {
+    background-image: url("../images/IMG_7806.jpg");
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 5px darkred;
+    border-radius: 5px; }
 
 .about-contact-dsb {
   margin-top: 5rem; }
