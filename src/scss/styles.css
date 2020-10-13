@@ -25,134 +25,38 @@ body {
   margin: 0 auto; }
 
 @font-face {
-  font-family: 'nunitoregular';
+  font-family: "nunitoregular";
   src: url("../fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'nunitoblack';
-  src: url("../fonts/Nunito/nunito-black-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitoblack_italic';
-  src: url("../fonts/Nunito/nunito-blackitalic-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-blackitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitobold';
+  font-family: "nunitobold";
   src: url("../fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'nunitobold_italic';
-  src: url("../fonts/Nunito/nunito-bolditalic-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-bolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitoextrabold';
-  src: url("../fonts/Nunito/nunito-extrabold-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-extrabold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitoextrabold_italic';
-  src: url("../fonts/Nunito/nunito-extrabolditalic-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-extrabolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitoextralight';
-  src: url("../fonts/Nunito/nunito-extralight-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-extralight-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitoextralight_italic';
-  src: url("../fonts/Nunito/nunito-extralightitalic-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-extralightitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitoitalic';
-  src: url("../fonts/Nunito/nunito-italic-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nunitolight';
+  font-family: "nunitolight";
   src: url("../fonts/Nunito/nunito-light-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'nunitolight_italic';
-  src: url("../fonts/Nunito/nunito-lightitalic-webfont.woff2") format("woff2"), url("../fonts/Nunito/nunito-lightitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansbold';
+  font-family: "open_sansbold";
   src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open_sansbold_italic';
-  src: url("../fonts/OpenSans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansextrabold';
-  src: url("../fonts/OpenSans/opensans-extrabold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-extrabold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansextrabold_italic';
-  src: url("../fonts/OpenSans/opensans-extrabolditalic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-extrabolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sanslight';
+  font-family: "open_sanslight";
   src: url("../fonts/OpenSans/opensans-light-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open_sanslight_italic';
-  src: url("../fonts/OpenSans/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-lightitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansregular';
+  font-family: "open_sansregular";
   src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sansitalic';
-  src: url("../fonts/OpenSans/opensans-regularitalic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regularitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sanssemibold';
-  src: url("../fonts/OpenSans/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-semibold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sanssemibold_italic';
-  src: url("../fonts/OpenSans/opensans-semibolditalic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-semibolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -415,36 +319,89 @@ footer {
   border-radius: 10px;
   padding: 0.5rem;
   margin: 5rem 0;
-  max-width: 350px; }
+  max-width: 300px; }
   .bfgoe-card-wrapper .bfgoe-card-title {
-    padding: 1.2rem; }
+    padding: 1.2rem 0 0.5rem 1.2rem; }
     .bfgoe-card-wrapper .bfgoe-card-title img {
-      width: 8em; }
+      width: 6em; }
   .bfgoe-card-wrapper .bfgoe-card-text {
-    color: rgba(0, 0, 0, 0.849);
-    padding: 0 1.2rem 1.2rem 0;
+    color: rgba(0, 0, 0, 0.705);
+    padding: 0 0 0 1.2rem;
     width: 100%;
-    font-size: 0.8em; }
+    font-family: "open_sansregular";
+    font-size: 0.9em; }
+  .bfgoe-card-wrapper .bfgoe-logo-wrap {
+    padding: 1.2rem; }
+    .bfgoe-card-wrapper .bfgoe-logo-wrap img {
+      width: 4.5em; }
   .bfgoe-card-wrapper .bfgoe-card-action {
     display: flex;
     border-top: 0.1px solid grey;
     padding: 1.2rem 1.2rem 0 0; }
 
+@media screen and (min-width: 1023px) {
+  .bfgoe-card-wrapper {
+    min-width: 400px; } }
+
 .bfgoe-button {
-  display: inline-block;
-  padding: 0.3em 1em;
-  border: 0.1em solid rgba(0, 0, 0, 0.37);
-  margin: 0 0.3em 0.3em 0;
+  border: 0.05em solid rgba(61, 8, 8, 0.582);
+  padding: 0.3rem;
+  margin: 0 0.3em 0.3em 0.5em;
   border-radius: 0.3em;
-  text-align: center; }
-  @media all and (max-width: 30em) {
-    .bfgoe-button .bfgoe-button {
-      display: block;
-      margin: 0.4em auto; } }
+  /*     @media all and (max-width: 30em) {
+        .bfgoe-button {
+            display: block;
+            margin: 0.4em auto;
+        }
+    } */ }
   .bfgoe-button a {
-    color: black;
+    color: rgba(0, 0, 0, 0.842);
     text-decoration: none;
-    font-size: 0.7em; }
+    font-size: 0.8em;
+    padding: 0.5rem; }
+
+@media screen and (min-width: 1023px) {
+  .bfgoe-button:hover {
+    background-color: #ad1616;
+    border: none;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    opacity: 0.8; }
+    .bfgoe-button:hover a {
+      color: white;
+      -webkit-transition: color 0.2s ease-in;
+      -moz-transition: color 0.2s ease-in;
+      -ms-transition: color 0.2s ease-in;
+      -o-transition: color 0.2s ease-in;
+      transition: color 0.2s ease-in; } }
+
+.btn-wrap {
+  padding: 1.2rem;
+  padding-left: 0;
+  max-width: 400px;
+  height: auto;
+  margin: 2em 0; }
+  .btn-wrap .fortbildung-btn {
+    font-size: 0.9em;
+    font-family: "open_sansregular";
+    padding: 1.2rem;
+    background-color: white;
+    border: 0.1em solid rgba(61, 8, 8, 0.582); }
+
+@media screen and (min-width: 1000px) {
+  .fortbildung-btn:hover {
+    background-color: #ad1616;
+    border: none;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    opacity: 0.8;
+    color: white; } }
 
 .comic-homepage-wrapper {
   width: 75%;
@@ -459,8 +416,7 @@ footer {
     flex-direction: row;
     justify-content: center; }
     .start-header .comic-homepage-wrapper {
-      order: 2;
-      width: 40%; }
+      order: 2; }
       .start-header .comic-homepage-wrapper .dsb-header-image {
         width: 100%;
         height: auto; }
@@ -486,30 +442,64 @@ footer {
         height: auto; }
     .start-header .dsb-headline {
       order: 1;
-      flex-basis: 15%;
-      padding-right: 1.2rem; }
+      flex-basis: 30%;
+      padding-right: 1.2rem;
+      font-size: 2rem; }
     .start-header .dsb-sub-headline {
       order: 3;
-      flex-basis: 20%;
-      padding-left: 1.2rem; }
+      flex-basis: 40%;
+      padding-left: 1.2rem;
+      font-size: 1.5rem;
+      align-self: flex-end; }
   .start-main {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 1.2rem; }
     .start-main .start-article {
-      padding-top: 1.2rem; }
+      padding-top: 5rem; }
     .start-main .bfgoe-card-wrapper {
       align-self: center;
       margin: 5rem auto; } }
 
-.person-one, .person-two, .about-contact-dsb, .about-contact-bfgoe {
+.person-one,
+.person-two,
+.about-contact-dsb,
+.about-contact-bfgoe {
   padding: 0.5rem; }
-  .person-one ul, .person-two ul, .about-contact-dsb ul, .about-contact-bfgoe ul {
+  .person-one ul,
+  .person-two ul,
+  .about-contact-dsb ul,
+  .about-contact-bfgoe ul {
     list-style-type: none; }
-  .person-one .person-header img, .person-two .person-header img, .about-contact-dsb .person-header img, .about-contact-bfgoe .person-header img {
-    width: 20%;
-    height: auto; }
+  .person-one .person-header .person-img-container-w,
+  .person-two .person-header .person-img-container-w,
+  .about-contact-dsb .person-header .person-img-container-w,
+  .about-contact-bfgoe .person-header .person-img-container-w {
+    background-image: url("../images/Herbold.jpg");
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px; }
+  .person-one .person-header .person-img-container-r,
+  .person-two .person-header .person-img-container-r,
+  .about-contact-dsb .person-header .person-img-container-r,
+  .about-contact-bfgoe .person-header .person-img-container-r {
+    background-image: url("../images/IMG_7806.jpg");
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px; }
+
+.about-contact-dsb {
+  margin-top: 5rem; }
 
 .about-contact-bfgoe {
   padding-bottom: 5rem; }
+  .about-contact-bfgoe .bfgoe-card-wrapper {
+    margin-top: 1em; }
 
 .einzelberatung-wrap {
   padding-bottom: 5rem; }
@@ -521,16 +511,44 @@ footer {
       margin: 0 auto;
       padding: 1.2rem 0;
       width: 60%; }
+  .einzelberatung-wrap ul {
+    padding-left: 0;
+    padding-bottom: 0.5rem; }
+    .einzelberatung-wrap ul li {
+      list-style-type: none; }
+    .einzelberatung-wrap ul ul {
+      padding-left: 3%; }
+      .einzelberatung-wrap ul ul li {
+        list-style-type: disc; }
 
-.fortbildung-teilnahmevoraussetzungen, .fortbildung-curriculum, .fortbildung-aufbau-umfang {
+.fortbildung-teilnahmevoraussetzungen,
+.fortbildung-curriculum,
+.fortbildung-aufbau-umfang {
   padding-top: 1.2rem; }
-  .fortbildung-teilnahmevoraussetzungen ul, .fortbildung-teilnahmevoraussetzungen ol, .fortbildung-curriculum ul, .fortbildung-curriculum ol, .fortbildung-aufbau-umfang ul, .fortbildung-aufbau-umfang ol {
+  .fortbildung-teilnahmevoraussetzungen ul,
+  .fortbildung-teilnahmevoraussetzungen ol,
+  .fortbildung-curriculum ul,
+  .fortbildung-curriculum ol,
+  .fortbildung-aufbau-umfang ul,
+  .fortbildung-aufbau-umfang ol {
     padding-left: 1.5em; }
-    .fortbildung-teilnahmevoraussetzungen ul li, .fortbildung-teilnahmevoraussetzungen ol li, .fortbildung-curriculum ul li, .fortbildung-curriculum ol li, .fortbildung-aufbau-umfang ul li, .fortbildung-aufbau-umfang ol li {
+    .fortbildung-teilnahmevoraussetzungen ul li,
+    .fortbildung-teilnahmevoraussetzungen ol li,
+    .fortbildung-curriculum ul li,
+    .fortbildung-curriculum ol li,
+    .fortbildung-aufbau-umfang ul li,
+    .fortbildung-aufbau-umfang ol li {
       margin: 0.1em; }
 
+.fortbildung-curriculum > ol > li:nth-child(n + 2):nth-child(-n + 3) {
+  padding-top: 1.2rem; }
+
 .fortbildung-aufbau-umfang {
-  padding-bottom: 5rem; }
+  padding-bottom: 0.5rem; }
+  .fortbildung-aufbau-umfang p {
+    margin: 0; }
+  .fortbildung-aufbau-umfang h5 {
+    padding-top: 1.2rem; }
 
 .uebungs-wrap {
   padding-bottom: 5rem; }
@@ -613,8 +631,16 @@ header {
 
 @media only screen and (min-width: 1024px) {
   header {
+    width: 100%;
     padding-top: 5rem; }
     header h1, header h3 {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto; }
+  .header-rest {
+    width: 80%;
+    padding-top: 5rem; }
+    .header-rest h1, .header-rest h3 {
       width: 55%;
       margin-left: auto;
       margin-right: auto; } }

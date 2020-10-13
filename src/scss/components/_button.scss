@@ -1,22 +1,66 @@
 .bfgoe-button {
-    display: inline-block;
-    padding: 0.3em 1em;
-    border: 0.1em solid rgba(0, 0, 0, 0.37);
-    margin: 0 0.3em 0.3em 0;
+    border: 0.05em solid $darkish;
+    padding: $padding-button;
+    margin: 0 0.3em 0.3em 0.5em;
     border-radius: 0.3em;
-    text-align: center;
 
-    @media all and (max-width: 30em) {
+/*     @media all and (max-width: 30em) {
         .bfgoe-button {
             display: block;
             margin: 0.4em auto;
         }
-    }
+    } */
 
     a {
-        color: rgba(0,0,0,1);
+        color: rgba(0, 0, 0, 0.842);
         text-decoration: none;
-        font-size: 0.7em;
+        font-size: 0.8em;
+        padding: $padding-small;
+    }
+
+}
+
+@media screen and (min-width: 1023px) {
+
+    .bfgoe-button:hover{
+        background-color: $primary-colour;
+        border: none;
+        @include transition(all 0.5s ease-in);
+        opacity: 0.8;
+
+        a {
+            color: white;
+            @include transition(color 0.2s ease-in);
+        }
+    }
+}
+
+
+.btn-wrap {
+
+    padding: $padding-medium;
+    padding-left: 0;
+    max-width: 400px;
+    height: auto;
+    margin: 2em 0;
+
+
+    .fortbildung-btn {
+        font-size: 0.9em;
+        font-family: "open_sansregular";
+        padding: $padding-medium;
+        background-color: white;
+        border: 0.1em solid $darkish;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .fortbildung-btn:hover {
+        background-color: $primary-colour;
+        border: none;
+        @include transition(all 0.1s ease-in);
+        opacity: 0.8;
+        color: white;
     }
 
 }

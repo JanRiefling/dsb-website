@@ -21,6 +21,16 @@ header {
 
 @media only screen and (min-width: 1024px) {
   header {
+    width: 100%;
+    padding-top: $padding-large;
+
+    h1, h3 {
+      @include text-alignment;
+    }
+  }
+
+  .header-rest {
+    width: 80%;
     padding-top: $padding-large;
 
     h1, h3 {
