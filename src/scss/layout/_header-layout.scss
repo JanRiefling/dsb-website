@@ -7,13 +7,12 @@ header {
 }
 
 @media only screen and (min-width: 550px) and (max-width: 1023px) {
-
   header {
     display: flex;
     flex-direction: row;
-  
 
-  h1, h3 {
+    h1,
+    h3 {
       @include text-alignment-deux;
     }
   }
@@ -24,7 +23,8 @@ header {
     width: 100%;
     padding-top: $padding-large;
 
-    h1, h3 {
+    h1,
+    h3 {
       @include text-alignment;
     }
   }
@@ -33,7 +33,8 @@ header {
     width: 80%;
     padding-top: $padding-large;
 
-    h1, h3 {
+    h1,
+    h3 {
       @include text-alignment;
     }
   }

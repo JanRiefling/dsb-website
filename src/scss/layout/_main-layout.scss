@@ -12,10 +12,10 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 
-  article {
-    @include text-alignment-deux;
+    article {
+      @include text-alignment-deux;
+    }
   }
-}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -26,7 +26,7 @@ main {
     justify-content: center;
 
     article {
-    @include text-alignment;
+      @include text-alignment;
     }
   }
 }

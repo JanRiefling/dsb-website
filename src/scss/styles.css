@@ -94,7 +94,7 @@ body {
     letter-spacing: -1px;
     color: rgba(0, 0, 0, 0.75); }
   body p {
-    line-height: calc(1.5em + .2vw);
+    line-height: calc(1.5em + 0.2vw);
     word-break: break-word; }
 
 @media screen and (min-width: 1024px) {
@@ -213,7 +213,6 @@ body {
     transform: translateY(-12px) rotate(45deg); }
 
 footer {
-  /* background-color: rgba(78, 76, 76, 0.048);  */
   border-top: 1px solid lightgray; }
   footer a {
     text-decoration: none;
@@ -347,13 +346,7 @@ footer {
   border: 0.05em solid rgba(61, 8, 8, 0.582);
   padding: 0.3rem;
   margin: 0 0.3em 0.3em 0.5em;
-  border-radius: 0.3em;
-  /*     @media all and (max-width: 30em) {
-        .bfgoe-button {
-            display: block;
-            margin: 0.4em auto;
-        }
-    } */ }
+  border-radius: 0.3em; }
   .bfgoe-button a {
     color: rgba(0, 0, 0, 0.842);
     text-decoration: none;
@@ -624,7 +617,8 @@ header {
   header {
     display: flex;
     flex-direction: row; }
-    header h1, header h3 {
+    header h1,
+    header h3 {
       width: 80%;
       margin-left: auto;
       margin-right: auto; } }
@@ -633,14 +627,16 @@ header {
   header {
     width: 100%;
     padding-top: 5rem; }
-    header h1, header h3 {
+    header h1,
+    header h3 {
       width: 55%;
       margin-left: auto;
       margin-right: auto; }
   .header-rest {
     width: 80%;
     padding-top: 5rem; }
-    .header-rest h1, .header-rest h3 {
+    .header-rest h1,
+    .header-rest h3 {
       width: 55%;
       margin-left: auto;
       margin-right: auto; } }
