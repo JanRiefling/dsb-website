@@ -1,70 +1,50 @@
 @mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
-  }
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
 
-  @mixin bp-large {
-    @media only screen and (max-width: 60em) {
-      @content;
-    }
-  }
-  
-  @mixin bp-medium {
-    @media only screen and (max-width: 40em) {
-      @content;
-    }
-  }
-  
-  @mixin bp-small {
-    @media only screen and (max-width: 30em) {
-      @content;
-    }
-  }
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
 
-  @function calculateRem($size) {
-    $remSize: $size / 16px;
-    @return $remSize * 1rem;
-  }
-  
-  @mixin font-size($size) {
-    font-size: $size;
-    font-size: calculateRem($size);
-  }
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
 
-  @mixin box-shadow($shadow...) {
-    -webkit-box-shadow: $shadow;
-       -moz-box-shadow: $shadow;       
-            box-shadow: $shadow;
-  }
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
 
+@mixin text-alignment {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  @mixin text-alignment {
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+@mixin text-alignment-deux {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  @mixin text-alignment-deux {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+@mixin text-alignment-footer {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  @mixin text-alignment-footer {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  @mixin person-img {
-    width: 200px;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-  }
+@mixin person-img {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}

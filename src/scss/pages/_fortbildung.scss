@@ -13,20 +13,18 @@
   }
 }
 
-
 .fortbildung-curriculum > ol > li:nth-child(n + 2):nth-child(-n + 3) {
   padding-top: $padding-medium;
 }
 
 .fortbildung-aufbau-umfang {
+  padding-bottom: $padding-small;
 
-    padding-bottom: $padding-small;
+  p {
+    margin: 0;
+  }
 
-    p {
-        margin:0;
-    }
-
-    h5 {
-        padding-top: $padding-medium;
-    }
+  h5 {
+    padding-top: $padding-medium;
+  }
 }

@@ -1,44 +1,41 @@
 .bfgoe-card-wrapper {
-    border: 1px solid $darkish;
-    border-radius: 10px;
-    padding: $padding-small;
-    margin: $padding-large 0;
-    max-width: 300px;
+  border: 1px solid $darkish;
+  border-radius: 10px;
+  padding: $padding-small;
+  margin: $padding-large 0;
+  max-width: 300px;
 
-    .bfgoe-card-title {
-        padding: $padding-medium 0 $padding-small $padding-medium;
-        img {
-            width: 6em;
-        }
+  .bfgoe-card-title {
+    padding: $padding-medium 0 $padding-small $padding-medium;
+    img {
+      width: 6em;
     }
+  }
 
-    .bfgoe-card-text{
-        color: rgba(0, 0, 0, 0.705);
-        padding: 0 0 0 $padding-medium;
-        width: 100%;
-        font-family: "open_sansregular";
-        font-size: 0.9em;
+  .bfgoe-card-text {
+    color: rgba(0, 0, 0, 0.705);
+    padding: 0 0 0 $padding-medium;
+    width: 100%;
+    font-family: "open_sansregular";
+    font-size: 0.9em;
+  }
+
+  .bfgoe-logo-wrap {
+    padding: $padding-medium;
+    img {
+      width: 4.5em;
     }
+  }
 
-    .bfgoe-logo-wrap{
-
-        padding: $padding-medium;
-     img {
-            width: 4.5em;
-        }
-    }
-
-
-    .bfgoe-card-action {
-        display: flex;
-        border-top: 0.1px solid grey;
-        padding: $padding-medium $padding-medium 0 0;
-    }
+  .bfgoe-card-action {
+    display: flex;
+    border-top: 0.1px solid grey;
+    padding: $padding-medium $padding-medium 0 0;
+  }
 }
 
-
 @media screen and (min-width: 1023px) {
-    .bfgoe-card-wrapper{
-        min-width: 400px;
-    }
+  .bfgoe-card-wrapper {
+    min-width: 400px;
+  }
 }
